@@ -8,10 +8,10 @@
 	const LANGUAGES = [
 		{ label: "English", url: "https://chemmasterynahida.github.io" },
 		{ label: "Français", url: "https://chemmasterynahida.github.io/fr/"},
-		{ label: "简体中文", url: "https://zhcn.chemmasterynahida.github.io/zhcn/" },
-        { label: "繁體中文", url: "https://zhtw.chemmasterynahida.github.io/zhtw/" },
-        { label: "日本語", url: "https://ja.chemmasterynahida.github.io/ja/" },
-		{ label: "한국어", url: "https://ko.chemmasterynahida.github.io/ko/" }
+		{ label: "简体中文", url: "https://chemmasterynahida.github.io/zhcn/" },
+        { label: "繁體中文", url: "https://chemmasterynahida.github.io/zhtw/" },
+        { label: "日本語", url: "https://chemmasterynahida.github.io/ja/" },
+		{ label: "한국어", url: "https://chemmasterynahida.github.io/ko/" }
 	];
 
 	function toggleMenu() {
