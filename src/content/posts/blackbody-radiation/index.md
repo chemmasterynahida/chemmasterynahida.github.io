@@ -2,7 +2,7 @@
 title: 1.1. Blackbody Radiation
 published: 2025-10-05
 description: "What problem did blackbody radiation theory have, and how can it be solved?"
-image: "./cover.jpeg"
+image: "planck.png"
 tags: ["Quantum Chemistry"]
 category: Quantum Chemistry
 lang: en
@@ -34,7 +34,7 @@ In 1858, **Balfour Stewart** found that a blackbody both absorbs and emits energ
 Over time, scientists proposed equations to describe this mysterious glow.  
 Among them, **Wilhelm Wien’s (1896)** formula fit experiments quite well:  
 
-**Wien's (1896)**
+**Wien's (1896)**  
 $$u(\nu,T)=a\nu^{3}e^{-b\nu/T}$$  
 $u$: energy density per unit volume at specific frequency  
 $\nu$: frequency  
@@ -42,7 +42,7 @@ $T$: temperature
 $a, b$: some constants  
 
 There are some trials for theoretical explanation. In June 1900, Lord Rayleigh reported the equation based on theories.  
-**Rayleigh-Jeans Law (1900)**
+**Rayleigh-Jeans Law (1900)**  
 $$du(\nu,T)=\frac{8\pi\nu^{2}}{c^{3}}Ud\nu=\frac{8\pi\nu^{2}kT}{c^{3}}d\nu$$  
 $c$: speed of light in vacuum ($c=299792458~m/s$)  
 $k$: Boltzmann constant ($k=1.380649×10^{−23}~J/K$)  
@@ -50,7 +50,7 @@ $k$: Boltzmann constant ($k=1.380649×10^{−23}~J/K$)
 But something went terribly wrong.  
 At high frequencies, this equation predicted infinite energy!  
 Physicists called it the **“Ultraviolet Catastrophe.”**  
-![ultraviolet catastrophe](planck.jfif "\"Ultraviolet catastrophe\"")  
+![ultraviolet catastrophe](planck.png "\"Ultraviolet catastrophe\"")  
 Rayleigh–Jeans law matched experiments at low frequencies, while Wien’s worked at high ones — yet neither told the full story.  
 
 ---
