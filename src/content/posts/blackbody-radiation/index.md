@@ -120,7 +120,7 @@ Integrating Planck’s law over all frequencies gives total emitted energy:
 
 **Stefan-Boltzmann law**  
 $$M=\sigma T^{4}=\frac{2\pi^{5}k^{4}}{15h^{3}c^{2}}T^{4}$$  
-$$\sigma=\frac{2\pi^{5}k^{4}}{15h^{3}c^{2}}=5.67\times10^{-8}W/m^{2}\cdot K^{4}$$
+$$\sigma=\frac{2\pi^{5}k^{4}}{15h^{3}c^{2}}=5.67\times10^{-8}W/m^{2}\cdot K^{4}$$  
 and indeed, the constant $\sigma$ matches experiments beautifully!  
 
 ### Wien's displacement law
@@ -132,7 +132,7 @@ and indeed, the constant $\sigma$ matches experiments beautifully!
 > To simplify the equation, let $\lambda=hc/xkT$ and $d\lambda=-hcdx/x^{2}kT$.  
 > $$du(x,T)=-\frac{8\pi x^{5}k^{5}T^{5}}{h^{4}c^{4}}\cdot\frac{1}{e^{x}-1}dx$$  
 > We should find which x satisfies this:  
-> $$\frac{d}{dx}(\frac{x^{5}}{e^{x}-1})=\frac{5x^{4}(e^{x}-1)-x^{5}(e^{x})}{(e^{x}-1)^{2}}=0$$
+> $$\frac{d}{dx}(\frac{x^{5}}{e^{x}-1})=\frac{5x^{4}(e^{x}-1)-x^{5}(e^{x})}{(e^{x}-1)^{2}}=0$$  
 > $x=\frac{hc}{\lambda kT}\approx4.9651$(We can get numerical value only), so this relationship can be written as:  
 > $$\lambda_{peak}=\frac{b}{T}\approx\frac{hc}{4.9651kT}=\frac{2.90mm/K}{T}$$  
 
@@ -144,22 +144,23 @@ So hotter objects glow with shorter wavelengths — from red, to yellow, to whit
 ### $\nu\rightarrow0$
 
 Rayleigh-Jeans law can explain the experimental result for low frequency. For small $\nu$, Planck's law should be converged into Rayleigh-Jeans law.  
-$$\lim_{\nu\rightarrow0}du(\nu,T)=\lim_{\nu\rightarrow0}\frac{8\pi h\nu^{3}}{c^{3}}\cdot\frac{1}{e^{h\nu/kT}-1}d\nu$$  
-It is known that the limit converges:  
-$$\lim_{x\rightarrow0}\frac{e^{x}-1}{x}=1$$  
-Therefore, the limit of equation becomes:  
-$$\lim_{\nu\rightarrow0}\frac{8\pi h\nu^{3}}{c^{3}}\cdot\frac{1}{e^{h\nu/kT}-1}d\nu=\frac{8\pi kT\nu^{2}}{c^{3}}d\nu$$  
+> $$\lim_{\nu\rightarrow0}du(\nu,T)=\lim_{\nu\rightarrow0}\frac{8\pi h\nu^{3}}{c^{3}}\cdot\frac{1}{e^{h\nu/kT}-1}d\nu$$  
+> It is known that the limit converges:  
+> $$\lim_{x\rightarrow0}\frac{e^{x}-1}{x}=1$$  
+> Therefore, the limit of equation becomes:  
+> $$\lim_{\nu\rightarrow0}\frac{8\pi h\nu^{3}}{c^{3}}\cdot\frac{1}{e^{h\nu/kT}-1}d\nu=\frac{8\pi kT\nu^{2}}{c^{3}}d\nu$$  
 For small frequency, the law converges into Rayleigh-Jeans law.  
 
 ### $\nu\rightarrow\infty$
 
-Wien's law can explain the experimental result for high frequency. For large $\nu$, Planck's law should be converged into Wien's law.
-$$\lim_{\nu\rightarrow\infty}du(\nu,T)=\lim_{\nu\rightarrow\infty}\frac{8\pi h\nu^{3}}{c^{3}}\cdot\frac{1}{e^{h\nu/kT}-1}d\nu$$  
-Since exponential function grows fast, so the constant -1 beside the exponential, can be ignored.  
-$$\lim_{\nu\rightarrow\infty}\frac{8\pi h\nu^{3}}{c^{3}}\cdot\frac{1}{e^{h\nu/kT}-1}d\nu=\frac{8\pi h\nu^{3}}{c^{3}}\cdot e^{-h\nu/kT}d\nu=a\nu^{3}e^{-b\nu/T}$$  
+Wien's law can explain the experimental result for high frequency. For large $\nu$, Planck's law should be converged into Wien's law.  
+> $$\lim_{\nu\rightarrow\infty}du(\nu,T)=\lim_{\nu\rightarrow\infty}\frac{8\pi h\nu^{3}}{c^{3}}\cdot\frac{1}{e^{h\nu/kT}-1}d\nu$$  
+> Since exponential function grows fast, so we can consider $e^{h\nu/kT}-1$ as $e^{h\nu/kT}$.  
+> $$\lim_{\nu\rightarrow\infty}\frac{8\pi h\nu^{3}}{c^{3}}\cdot\frac{1}{e^{h\nu/kT}-1}d\nu=\frac{8\pi h\nu^{3}}{c^{3}}\cdot e^{-h\nu/kT}d\nu=a\nu^{3}e^{-b\nu/T}$$  
+For large frequency, the law is similar to Wien's law.  
 
-***
-***
+---
+---
 
 ## Planck's Ideas and Insights
 
@@ -188,7 +189,7 @@ He studied entropy and thermodynamics, and through elegant reasoning, found a ne
 > Therefore, we can get $(\partial^{2} S/\partial U^{2})^{-1}$ as polynomials of U for the two laws.  
 > $$(\frac{\partial^{2} S}{\partial U^{2}})^{-1}\propto U~(Wien's)$$  
 > $$(\frac{\partial^{2} S}{\partial U^{2}})^{-1}\propto U^{2}~(RJ)$$  
-> Planck combined two polynomials as:
+> Planck combined two polynomials as:  
 > $$(\frac{\partial^{2} S}{\partial U^{2}})^{-1}=C_{1}U+C_{2}U^{2}$$  
 > He concluded the form of the equation as:  
 > $$U=\frac{C_{1}C_{2}}{Ce^{C_{1}T}-1}$$  
@@ -198,7 +199,7 @@ He studied entropy and thermodynamics, and through elegant reasoning, found a ne
 
 Later that year, he applied Boltzmann’s theory of probability to radiation — imagining countless tiny “energy elements” inside a cavity.  
 $$\epsilon\epsilon\epsilon|\epsilon\epsilon|\epsilon|\epsilon\epsilon\epsilon|\epsilon\epsilon|\cdots$$  
-where $\epsilon$ is a unit of energy.
+where $\epsilon$ is a unit of energy.  
 
 He used combinatorics to count all possible arrangements of these quanta:  
 $$W=\frac{(P+N-1)!}{P!(N-1)!}$$  
@@ -217,7 +218,7 @@ $$S=k\cdot ln(W)$$
 $S$: absolute entropy of the system  
 $W$: "*Wahrscheinlichkeit*", probability of occurence of macrostates  
 
-> Let's remind the equation from the thermodynamics:
+> Let's remind the equation from the thermodynamics:  
 > $$\frac{1}{T}=\frac{\partial S}{\partial U}=k\frac{\partial(ln(W))}{\partial U}$$  
 > We have derived the approximate value of $W$, so we can write $ln(W)$ as:  
 > $$ln(W)=(P+N)ln(P+N)-Pln(P)-Nln(N)=\frac{N}{\epsilon}((U+\epsilon)ln(U+\epsilon)-\epsilon ln(\epsilon)-Uln(U))$$  
