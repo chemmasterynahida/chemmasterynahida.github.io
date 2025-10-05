@@ -216,7 +216,7 @@ $N$: number of light waves
 Then, with a touch of mathematical magic, based on Boltzmann's principle, he linked this to entropy:  
 $$S=k\cdot ln(W)$$  
 $S$: absolute entropy of the system  
-$W$: "*Wahrscheinlichkeit*", probability of occurence of macrostates  
+$W$: "*Wahrscheinlichkeit*", number of cases of macrostates  
 
 > Let's remind the equation from the thermodynamics:  
 > $$\frac{1}{T}=\frac{\partial S}{\partial U}=k\frac{\partial(ln(W))}{\partial U}$$  
