@@ -25,7 +25,7 @@ If you think of the word *quantity*, you’re already close! The term *quantum* 
 ## Before Planck (as of 1900)
 
 Let’s travel back in time to the Newton's era and explore a puzzle that led to the birth of quantum physics — **blackbody radiation**.  
-Sir Isaac Newton mentioned the concept in his book *Opticks*:  
+Sir **Isaac Newton** mentioned the concept in his book *Opticks*:  
 
 > "Do not black Bodies conceive heat more easily from Light than those of other Colours do, by reason that the Light falling on them is not reflected outwards, but enters the Bodies, and is often reflected and refracted within them, until it be stifled and lost?"
 
@@ -232,8 +232,10 @@ $W$: "*Wahrscheinlichkeit*", number of microstates
 From there emerged his groundbreaking result:  
 $$U=\frac{\epsilon}{e^{\epsilon/kT}-1}=\frac{hv}{e^{hv/kT}-1}$$  
 
-Each light wave could only possess energy in whole-number multiples of $h\nu$.  
-This was the dawn of the quantum era — and humanity’s first glimpse at the universe’s smallest secrets.  
+This is Planck's famous equation. Each light wave could only possess energy in whole-number multiples of $h\nu$.  
+It reveals that energy is not continuous but composed of discrete quanta.  
+From then on, human first touched the threshold of the quantum world. At that moment, the light of knowledge quietly shone in the night sky of science.  
+This was the dawn of the quantum era and humanity’s first glimpse at the universe’s smallest secrets.  
 
 ## References
 
