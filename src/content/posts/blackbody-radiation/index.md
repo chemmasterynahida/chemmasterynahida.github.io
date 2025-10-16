@@ -22,9 +22,9 @@ To begin, we must understand what *Quantum* means. You’ve probably heard this 
 But what *is* a quantum, truly?  
 If you think of the word *quantity*, you’re already close! The term *quantum* comes from it, meaning a small *amount* of something. Once we see how quantum mechanics was born, this meaning will make perfect sense.  
 
-## Before Planck (as of 1900)
+## Before Planck (~1900)
 
-Let’s travel back in time to the Newton's era and explore a puzzle that led to the birth of quantum physics — **blackbody radiation**.  
+Let’s travel back in time to the late 19th century and explore a puzzle that led to the birth of quantum physics — **blackbody radiation**.  
 Sir **Isaac Newton** mentioned the concept in his book *Opticks*:  
 
 > "Do not black Bodies conceive heat more easily from Light than those of other Colours do, by reason that the Light falling on them is not reflected outwards, but enters the Bodies, and is often reflected and refracted within them, until it be stifled and lost?"
@@ -115,7 +115,9 @@ Integrating Planck’s law over all frequencies gives total emitted energy:
 > $$\int_{0}^{\infty}\frac{x^{3}}{e^{x}-1}dx=\frac{\pi^{4}}{15}$$  
 > Therefore,  
 > $$E=\int du=\frac{8\pi k^{3}T^{3}}{h^{2}c^{3}}\cdot\frac{\pi^{4}}{15}\cdot\frac{kT}{h}=\frac{8\pi^{5}k^{4}T^{4}}{15h^{3}c^{3}}$$  
-> We got **total energy of radiation** of blackbody. (unit=$J/m^{3}$) However, the Stefan-Boltzmann law asks about **radiation power**. (unit=$W/m^{2}$) We can convert from total energy to surface radiation by multiplying $c/4$.  
+> We got **total energy of radiation** of blackbody. (unit=$J/m^{3}$)
+> However, the Stefan-Boltzmann law asks about **radiation power**. (unit=$W/m^{2}$)
+> We can convert from total energy to surface radiation by multiplying $c/4$.  
 > $$M=E\cdot\frac{c}{4}=\frac{8\pi^{5}k^{4}T^{4}}{15h^{3}c^{3}}\cdot\frac{c}{4}=\frac{2\pi^{5}k^{4}T^{4}}{15h^{3}c^{2}}=\sigma T^{4}$$  
 
 **Stefan-Boltzmann law**  
@@ -191,9 +193,8 @@ He studied entropy and thermodynamics, and through elegant reasoning, found a ne
 > $$(\frac{\partial^{2} S}{\partial U^{2}})^{-1}\propto U^{2}~(RJ)$$  
 > Planck combined two polynomials as:  
 > $$(\frac{\partial^{2} S}{\partial U^{2}})^{-1}=C_{1}U+C_{2}U^{2}$$  
-> He concluded the form of the equation as:  
-> $$U=\frac{C_{1}C_{2}}{Ce^{C_{1}T}-1}$$  
-> where C is the integration constant. Planck reported this constant as 1.  
+> He concluded the form of the equation in form of wavelength as:  
+> $$U=\frac{C\lambda^{-5}}{e^{c/\lambda T}-1}$$  
 
 ### December 1900: Discrete Energy
 
@@ -230,16 +231,24 @@ $W$: "*Wahrscheinlichkeit*", number of microstates
 > $$U=\frac{\epsilon}{e^{\epsilon/kT}-1}=\frac{hv}{e^{hv/kT}-1}$$  
 
 From there emerged his groundbreaking result:  
-$$U=\frac{\epsilon}{e^{\epsilon/kT}-1}=\frac{hv}{e^{hv/kT}-1}$$  
+$$du(\nu,T)=\frac{8\pi\nu^{2}}{c^{3}}Ud\nu=\frac{8\pi\nu^{2}}{c^{3}}\cdot\frac{h\nu}{e^{h\nu/kT}-1}d\nu=\frac{8\pi h\nu^{3}}{c^{3}}\cdot\frac{1}{e^{h\nu/kT}-1}d\nu$$  
+
+---
 
 This is Planck's famous equation. Each light wave could only possess energy in whole-number multiples of $h\nu$.  
 It reveals that energy is not continuous but composed of discrete quanta.  
+
+He was awarded the **Nobel Prize in Physics in 1918** for discovery of the energy quanta.  
+
+> *The Nobel Prize in Physics 1918 was awarded to Max Karl Ernst Ludwig Planck "in recognition of the services he rendered to the advancement of Physics by his discovery of energy quanta"*  
+
 From then on, human first touched the threshold of the quantum world. At that moment, the light of knowledge quietly shone in the night sky of science.  
 This was the dawn of the quantum era and humanity’s first glimpse at the universe’s smallest secrets.  
 
 ## References
 
 Blackbody Radiation: Wikipedia (<https://en.wikipedia.org/wiki/Blackbody%20Radiation>)  
+Newton, I. (1704). Opticks: Or, a treatise of the reflections, refractions, inflections and colours of light. London: Sam. Smith and Benj. Walford.  
 Planck's Law: Wikipedia (<https://en.wikipedia.org/wiki/Planck%27s%20Law>)  
 Planck, M. (1900). Über eine Verbesserung der Wien’schen Strahlungsgleichung. *Verhandlungen der Deutschen Physikalischen Gesellschaft*.  
 Planck, M. (1900). Zur theorie des gesetzes der energieverteilung im normalspektrum. *VhDPG*, 2, 238.  

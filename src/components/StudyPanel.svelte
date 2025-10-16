@@ -82,7 +82,9 @@ onMount(async () => {
 
 	const groupedPostsArray = Object.keys(grouped).map((category) => ({
 		category,
-		posts: grouped[category],
+		posts: grouped[category].sort((a, b) =>
+		a.data.title.localeCompare(b.data.title),
+	),
 	}));
 
 	groupedPostsArray.sort((a, b) => a.category.localeCompare(b.category));
