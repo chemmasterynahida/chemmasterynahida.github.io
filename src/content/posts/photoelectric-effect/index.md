@@ -35,7 +35,7 @@ But others found that many of light’s behaviors could also be explained if it 
 |Light travels in straignt lines|Diffraction|
 |Reflection|Both can explain|
 |Refraction|Huygens' principle|
-|Colors=Particle types|Interference with different colors|
+|Colors=Particle types|Different wavelength|
 |No interference discussed|Young's double slit experiment|
 |No polarization discussed|Fresnel's wave theory|
 
