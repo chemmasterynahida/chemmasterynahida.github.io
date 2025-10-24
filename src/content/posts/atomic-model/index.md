@@ -316,7 +316,7 @@ where
 * $\omega$ is the **angular frequency** ($\nu = \omega / 2\pi$).  
 
 From the relationship between energy and angular momentum ($E = \frac{1}{2}L\omega$), Bohr found something quite elegant:  
-$$L=n\frac{h}{2\pi}$$  
+$$L=mvr=n\frac{h}{2\pi}$$  
 
 Here, $L$ is the **angular momentum**-—and this, in essence, was Bohr’s **quantum hypothesis**.  
 Interestingly, the idea of linking angular momentum to quantized orbits was first inspired by **John W. Nicholson**.  
@@ -486,10 +486,10 @@ Thus, electrons can only exist in **certain permitted orbits**, where their wave
 
 Let’s recall de Broglie’s relation $\lambda = h/p$.  
 For an electron orbiting the nucleus, the condition for a standing wave is  
-$$2\pi r=n\lambda=\frac{nh}{2\pi}=n\hbar$$  
+$$2\pi r=n\lambda=\frac{nh}{mv}=n\hbar$$  
 
 This matches perfectly with Bohr’s quantization of angular momentum:  
-$$2\pi r=n\hbar$$  
+$$mvr=n\hbar$$  
 
 So, the once-mysterious rule of Bohr’s model found its foundation in the wave nature of matter.  
 The circle was complete — and physics was ready to step into the age of quantum mechanics.  
