@@ -77,9 +77,9 @@ export const profileConfig: ProfileConfig = {
 			url: "/images/wechat.png",
 		},
 		{
-			name: "HoYoLAB",
-			icon: "mdi:alpha-h-box",
-			url: "https://www.hoyolab.com/accountCenter/postList?id=425986572",
+			name: "Discord",
+			icon: "fa6-brands:discord",
+			url: "https://discord.gg/K56kRv3x",
 		},
 	],
 };

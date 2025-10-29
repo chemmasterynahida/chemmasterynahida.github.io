@@ -149,7 +149,7 @@ was concentrated in a tiny central **nucleus**.
 To describe how the alpha particles were deflected, he modeled their paths as **hyperbolic orbits**, and derived the formula for the **scattering angle**:  
 
 ![Geometry of the model](rutherford-explanation.png "Geometry of the model")  
-$$\theta = 2~arctan\left(\frac{r_{min}}{2b}\right) = 2~arctan\left(\frac{1}{4\pi\epsilon_{0}} \frac{q_{\alpha}q_{Z}}{E_{\alpha}}\right)$$  
+$$\theta = 2~arctan\left(\frac{r_{min}}{2b}\right) = 2~arctan\left(\frac{1}{4\pi\epsilon_{0}} \frac{q_{\alpha}q_{Z}}{2bE_{\alpha}}\right)$$  
 
 where:  
 
@@ -492,7 +492,6 @@ This matches perfectly with Bohr’s quantization of angular momentum:
 $$mvr=n\hbar$$  
 
 So, the once-mysterious rule of Bohr’s model found its foundation in the wave nature of matter.  
-The circle was complete — and physics was ready to step into the age of quantum mechanics.  
 
 ## Modern Atomic Model
 
@@ -545,7 +544,7 @@ Many of the brilliant minds who helped build the atomic model were recognized wi
 |Schrödinger, Dirac|Physics|1933|Modern atomic model|
 |Chadwick|Physics|1935|Discovery of neutron|
 |Davisson, G.P.Thomson|Physics|1937|interference of electron|
-|Pauil|Physics|1945|Exclusion principle|
+|Pauli|Physics|1945|Exclusion principle|
 |Born|Physics|1954|Statistical interpretation of wavefunction|
 
 ---
@@ -620,7 +619,7 @@ $$\lambda=\frac{h}{p}$$
 > $$dk=\frac{2\pi mc}{h(1-\beta^{2})^{3/2}}d\beta$$  
 > So the group velocity is simply:  
 > $$v_{g}=\frac{d\omega}{dk}=\beta c=v$$  
-> his is exactly the **velocity of the particle itself**, reminding us that **mass is energy** ($E = mc^{2}$).  
+> This is exactly the **velocity of the particle itself**, reminding us that **mass is energy** ($E = mc^{2}$).  
 
 ## References
 
@@ -647,10 +646,10 @@ Rutherford, E. (1911). The scattering of α and β particles by matter and the s
 <https://doi.org/10.1080/14786440508637080>  
 Balmer, J. J. (1885). "Notiz über die Spectrallinien des Wasserstoffs". Annalen der Physik und Chemie. 3rd series. 25: 80–87.  
 Bohr, N. (1913) I. On the constitution of atoms and molecules, The London, Edinburgh, and Dublin Philosophical Magazine and Journal of Science, 26:151, 1-25.  
-<https://doi.org/10.1080/14786441308634955>
+<https://doi.org/10.1080/14786441308634955>  
 Eckert, M. How Sommerfeld extended Bohr’s model of the atom (1913–1916). EPJ H 39, 141–156 (2014).  
 <https://doi.org/10.1140/epjh/e2013-40052-4>  
 de Broglie, L. (1924) XXXV. A tentative theory of light quanta, The London, Edinburgh, and Dublin Philosophical Magazine and Journal of Science, 47:278, 446-458.  
-<https://doi.org/10.1080/14786442408634378>
+<https://doi.org/10.1080/14786442408634378>  
 de Broglie, L. Recherches sur la théorie des Quanta. Physique. Migration - université en cours d'affectation, 1924. Français. ⟨NNT : ⟩. ⟨tel-00006807⟩  
 <https://theses.hal.science/tel-00006807v1>  
