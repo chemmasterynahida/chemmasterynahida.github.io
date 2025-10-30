@@ -30,7 +30,7 @@ I really hope you—the "Sages of Buer"—could deeply explore Chemistry with me
 > - [GitHub](https://github.com/chemmasterynahida/)
 > - [YouTube](https://www.youtube.com/@chemmasterynahida)
 > - [WeChat](/images/wechat.png)
-> - [Discord](https://discord.gg/K56kRv3x)
+> - [Discord](https://discord.gg/2nUFTgBr73)
 > - [chemmasterynahida@gmail.com](mailto:chemmasterynahida@gmail.com)
 
 <!--Nice to meet you! I'm Chemistry Mastery Nahida. I'm currently majoring in Chemistry, with a focus on *Computational Chemistry*. I started this website after graduating with my undergraduate degree to share and explore topics related to my field. This blog mainly covers subjects in *Physical Chemistry* and *Computational Chemistry*, but I also plan to touch on various other areas within chemistry. Each post will be written first in *English*, followed by translations in *Chinese*, *Japanese*, and *Korean*. In the future, I hope to expand into other related topics and create videos to complement the articles. I'm still exploring what to include, so stay tuned for updates!>
