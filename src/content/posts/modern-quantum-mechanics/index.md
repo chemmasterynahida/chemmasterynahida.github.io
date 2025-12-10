@@ -66,8 +66,6 @@ This non-commutativity whispers the quantum nature hidden inside.
 
 ---
 
-## Bohr-Sommerfeld model
-
 ## Bohr–Sommerfeld model
 
 Before Heisenberg, the Bohr–Sommerfeld quantisation condition was:  
