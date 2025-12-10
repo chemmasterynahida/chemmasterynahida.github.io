@@ -1,5 +1,5 @@
 ---
-title: "0. Quantum Chemistry: Contents"
+title: "Quantum Chemistry: 0. Contents"
 published: 2025-09-30
 tags: [Quantum Chemistry, Contents]
 category: Quantum Chemistry

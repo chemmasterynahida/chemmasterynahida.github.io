@@ -17,10 +17,10 @@ I'd love to create videos in the future too, to help explain things visually. I'
 ::github{repo="chemmasterynahida/chemmasterynahida.github.io"}
 
 > Nahida is a character in the open-world game *Genshin Impact*, known as the Dendro Archon and bearing the Archon name Buer. Revered as the God of Wisdom, she once oversaw the flow of all knowledge in the nation of Sumeru through the Akasha Terminal—a vast network that allowed her citizens access to boundless information.  
-> Yet over time, Nahida came to understand a deeper truth: having answers is not the same as understanding them. Many people, she realized, cling to ignorance not out of lack of knowledge, but out of fear; fear of change, of truth, and of asking the hard questions.  
+> Yet over time, Nahida came to understand a deeper truth: having answers is not the same as understanding them. Many people, she realised, cling to ignorance not out of lack of knowledge, but out of fear; fear of change, of truth, and of asking the hard questions.  
 > In her wisdom, she chose to deactivate the Akasha Terminal, not to withhold knowledge, but to encourage genuine inquiry and prevent its misuse by those in power. As she watches over her people, Nahida seeks to inspire the courage to question, reflect, and grow.  
 
-*&nbsp;"I think I'm good at asking the right questions and giving good answers, but I've come to realize that a lot of people just convince themselves they don't understand. The answers to their problems don't help them. It seems to me that as people grow older, they lose the courage to question things and accept the truth..."*  
+*&nbsp;"I think I'm good at asking the right questions and giving good answers, but I've come to realise that a lot of people just convince themselves they don't understand. The answers to their problems don't help them. It seems to me that as people grow older, they lose the courage to question things and accept the truth..."*  
 
 I really hope you—the "Sages of Buer"—could deeply explore Chemistry with me!  
 *&nbsp;"I'll leave this to you... The 'First Sages of Buer'"*

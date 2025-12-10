@@ -1,5 +1,5 @@
 ---
-title: 1.2. Photoelectric Effect and Property of Light
+title: "Quantum Chemistry: 1.2. Photoelectric Effect and Property of Light"
 published: 2025-10-16
 description: "How did Einstein’s theory changed our understanding of light?"
 image: "photoelectric-effect.png"
@@ -28,16 +28,16 @@ Still, Planck struggled to explain why his formula worked — and the classical 
 ## Light as Particle vs Wave
 
 Long before Planck’s time, **Isaac Newton** proposed that **light is made of particles**, in his book *Opticks*.  
-But others found that many of light’s behaviors could also be explained if it were a **wave**.  
+But others found that many of light’s behaviours could also be explained if it were a **wave**.  
 
 |Newton's Idea|Wave Theory|
 |:---:|:---:|
 |Light travels in straignt lines|Diffraction|
 |Reflection|Both can explain|
 |Refraction|Huygens' principle|
-|Colors=Particle types|Different wavelength|
+|Colours=Particle types|Different wavelength|
 |No interference discussed|Young's double slit experiment|
-|No polarization discussed|Fresnel's wave theory|
+|No polarisation discussed|Fresnel's wave theory|
 
 Thanks to *Thomas Young* and *Augustin Fresnel*, the **wave theory of light triumphed**.  
 **Young’s double-slit experiment** revealed that light could interfere with itself — a clear sign of a wave.  
@@ -63,13 +63,13 @@ That simple, flickering spark would later illuminate one of the greatest mysteri
 
 After Hertz’s observation, other researchers sought to understand this strange effect more deeply.  
 Among them, **Aleksandr Stoletov** and **Philipp Lenard** conducted some of the most detailed studies.  
-They carried out quantitative measurements, while Lenard discovered that ultraviolet light could even ionize gas molecules—freeing electrons from their bonds.  
+They carried out quantitative measurements, while Lenard discovered that ultraviolet light could even ionise gas molecules—freeing electrons from their bonds.  
 
 ![Lenard's experiment](lenard-experiment.png "lenard's experiment")  
 
 This is *Lenard’s apparatus*. He carefully examined how the light caused electrons to escape from metal surfaces.  
 
-To test their behavior, he used what’s called the **stopping potential**.  
+To test their behaviour, he used what’s called the **stopping potential**.  
 If the metal releases electrons, we can apply a negative voltage to push them back—like setting up a small invisible barrier.  
 The stronger the negative potential, the more energy an electron needs to overcome it and escape.  
 
@@ -153,25 +153,25 @@ And from that dance, the age of **quantum physics** was born.
 
 ### Can air affect the result?
 
-Lenard earlier discovered gas can be ionized by high-frequency ultraviolet light.  
+Lenard earlier discovered gas can be ionised by high-frequency ultraviolet light.  
 So one might wonder… could the surrounding air have affected Lenard’s experiment?  
 
 Let’s think about it carefully.  
 
-The ionization of gas follows this condition:  
+The ionisation of gas follows this condition:  
 
 $$h\nu \geq J$$  
 where  
-$J$ is the ionization energy of the gas.  
+$J$ is the ionisation energy of the gas.  
 
 Lenard reported that the *Hertz effect* appeared only for wavelengths **below 190 nm**, which corresponds to an energy of about **640 kJ·mol⁻¹**.  
-Later, *Johannes Stark* measured that the ionization energy of air at low pressure is around **10 eV**, or roughly **960 kJ·mol⁻¹**.  
+Later, *Johannes Stark* measured that the ionisation energy of air at low pressure is around **10 eV**, or roughly **960 kJ·mol⁻¹**.  
 
 This means:  
-to ionize air, light must have energy **greater than 960 kJ·mol⁻¹**, which corresponds to a wavelength **shorter than 125 nm**.  
+to ionise air, light must have energy **greater than 960 kJ·mol⁻¹**, which corresponds to a wavelength **shorter than 125 nm**.  
 
 Lenard’s experiments, performed in 1900 and 1902, only used light with wavelengths **longer than 125 nm**.  
-Therefore, the light he used did not have enough energy to ionize air.  
+Therefore, the light he used did not have enough energy to ionise air.  
 
 So we can conclude with confidence — the surrounding air did not interfere with Lenard’s results.  
 
@@ -220,7 +220,7 @@ Meanwhile, various experiments have revealed that light can reveal two very diff
 
 |Particle|Wave|
 |:---:|:---:|
-|• Blackbody radiation<br>• Photoelectric effect<br>• Compton scattering|• Interference<br>• Polarization|
+|• Blackbody radiation<br>• Photoelectric effect<br>• Compton scattering|• Interference<br>• Polarisation|
 
 Each of these discoveries shines a different light on its nature — one moment, light appears as a stream of discrete quanta, and the next, as a graceful, rippling wave spreading through space.  
 
@@ -232,7 +232,7 @@ Or perhaps something deeper — something that transcends both, revealing only t
 By *using* Planck’s **quantum hypothesis**, Einstein unveiled the mystery of the **photoelectric effect** — a phenomenon that classical physics could never explain.  
 
 He proposed that light is made of tiny quanta, called **photons**, each carrying an energy of $h\nu$.  
-Through this, he not only explained the effect perfectly, but also **verified Planck’s daring idea** — that energy itself is quantized.  
+Through this, he not only explained the effect perfectly, but also **verified Planck’s daring idea** — that energy itself is quantised.  
 
 Yet Einstein’s insight reached even further.  
 He suggested that light is not bound to choose a single identity — it can behave as **both particle and wave**.  

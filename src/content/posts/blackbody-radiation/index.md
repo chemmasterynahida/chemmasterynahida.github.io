@@ -1,5 +1,5 @@
 ---
-title: 1.1. Blackbody Radiation
+title: "Quantum Chemistry: 1.1. Blackbody Radiation"
 published: 2025-10-05
 description: "What problem did blackbody radiation theory have, and how can it be solved?"
 image: "planck.png"

@@ -1,5 +1,5 @@
 ---
-title: 1.3. Atomic model
+title: "Quantum Chemistry: 1.3. Atomic model"
 published: 2025-10-24
 description: "How the atomic structure is explained, and what obstacle should be overcome?"
 image: "electron-cloud-model.png"
@@ -38,11 +38,11 @@ And his main ideas were:
 
 * All matter is made of tiny, indivisible atoms.  
 * Atoms of the same element share the same mass and properties.  
-* Atoms cannot be created or destroyed during chemical reactions—they can only rearrange.  
+* Atoms cannot be created or destroyed during chemical reactions — they can only rearrange.  
 * Compounds form when atoms of different elements combine in fixed ratios.  
 
 However… Dalton’s model wasn’t perfect.  
-His original publication contained some inaccuracies, and later scientists—like Avogadro, and those working on kinetic theory and statistics - refined and expanded it into the much more complete atomic model we know today.  
+His original publication contained some inaccuracies, and later scientists — like Avogadro, and those working on kinetic theory and statistics - refined and expanded it into the much more complete atomic model we know today.  
 
 ---
 
@@ -51,7 +51,7 @@ Even the smallest particles can lead to the biggest revelations, don’t you thi
 ## Discovery of the Electron
 
 So far, we’ve learned that atoms can’t be divided through ordinary chemical reactions…  
-But—what if we look **even deeper**?  
+But — what if we look **even deeper**?  
 
 In 1897, **Joseph J. Thomson** began investigating a mysterious phenomenon known as **cathode rays**.  
 These rays were emitted from the cathode in a tube filled with low-pressure gas, when a high voltage was applied.  
@@ -87,7 +87,7 @@ much like raisins scattered throughout a pudding.
 He called it the **Plum Pudding Model**.  
 ![plum pudding model](plum-pudding-model.jpg "plum pudding model")  
 
-At first, it seemed reasonable—the electrons could be arranged evenly, each performing a gentle harmonic motion within the positively charged “jelly.”  
+At first, it seemed reasonable — the electrons could be arranged evenly, each performing a gentle harmonic motion within the positively charged “jelly.”  
 Mathematically, that looked stable... but physics had other ideas.  
 
 Because electrons are accelerating as they move, they should continuously **radiate energy** - causing the atom to **collapse** eventually!  
@@ -119,7 +119,7 @@ Some alpha particles deflected sharply, and a few even bounced **straight back**
 ---
 
 In 1911, Rutherford, who supervised the experiment, proposed a **new atomic model** to explain this mystery.  
-He reasoned that the atom must contain a **small, dense center of positive charge** - a compact core that repelled the alpha particles with tremendous force.  
+He reasoned that the atom must contain a **small, dense centre of positive charge** - a compact core that repelled the alpha particles with tremendous force.  
 This central region became known as the **nucleus**, and the electrons were thought to **orbit around it**, much like planets around the Sun.  
 
 Thomson’s model couldn’t account for such large-angle scattering, but Rutherford’s nuclear model could explain it beautifully.  
@@ -169,11 +169,11 @@ To understand why some alpha particles were deflected backward, we need to see h
 
 Rutherford described the **differential cross section**, which tells us how likely particles are to scatter at a given angle:  
 
-$$\frac{d\sigma}{d\Omega}=\left(\frac{1}{4\pi\epsilon_{0}}\frac{q_{\alpha}q_{Z}}{4E_{\alpha}}\right)^{2}\frac{1}{sin^{4}(\theta/2)}$$  
+$$\frac{d\sigma}{d\Omega}=\left(\frac{1}{4\pi\epsilon_{0}}\frac{q_{\alpha}q_{Z}}{4E_{\alpha}}\right)^{2}\frac{1}{\sin^{4}(\theta/2)}$$  
 
 When expressed in terms of the scattering angle ($d\Omega = 2\pi\sin(\theta)d\theta$):  
 
-$$\frac{d\sigma}{d\theta}=\left(\frac{1}{4\pi\epsilon_{0}}\frac{q_{\alpha}q_{Z}}{4E_{\alpha}}\right)^{2}\frac{cos(\theta/2)}{sin^{3}(\theta/2)}$$  
+$$\frac{d\sigma}{d\theta}=\left(\frac{1}{4\pi\epsilon_{0}}\frac{q_{\alpha}q_{Z}}{4E_{\alpha}}\right)^{2}\frac{\cos(\theta/2)}{\sin^{3}(\theta/2)}$$  
 
 This formula predicts that even though **most** particles pass through at small angles, a **few** will scatter sharply — sometimes even straight back!  
 It perfectly matched what Geiger and Marsden had seen.  
@@ -183,11 +183,11 @@ It perfectly matched what Geiger and Marsden had seen.
 Thomson’s model, however, predicts a very different pattern.  
 Since it assumes a soft, evenly distributed positive charge, the scattering should follow a gentle, **Gaussian-like** curve:  
 
-$$\frac{d\sigma}{d\Omega}\approx\frac{1}{2\pi\theta_{rms}^{2}}exp\!\left(-\frac{\theta^{2}}{2\theta_{rms}^{2}}\right)$$  
+$$\frac{d\sigma}{d\Omega}\approx\frac{1}{2\pi\theta_{rms}^{2}}\exp\!\left(-\frac{\theta^{2}}{2\theta_{rms}^{2}}\right)$$  
 
 and  
 
-$$\frac{d\sigma}{d\theta}\approx\frac{\theta}{\theta_{rms}^{2}}exp\!\left(-\frac{\theta^{2}}{2\theta_{rms}^{2}}\right)$$  
+$$\frac{d\sigma}{d\theta}\approx\frac{\theta}{\theta_{rms}^{2}}\exp\!\left(-\frac{\theta^{2}}{2\theta_{rms}^{2}}\right)$$  
 
 where:  
 
@@ -199,7 +199,7 @@ where:
 
 | θ | Rutherford’s Model | Thomson’s Model |
 |:---:|:---:|:---:|
-| $\frac{d\sigma}{d\Omega}$ | $\propto\frac{1}{sin^{4}(\theta/2)}$<br>(polynomial) | $\propto\theta\cdot exp(-\frac{\theta^{2}}{2\theta_{rms}^{2}})$<br>(exponential) |
+| $\frac{d\sigma}{d\Omega}$ | $\propto\frac{1}{\sin^{4}(\theta/2)}$<br>(polynomial) | $\propto \exp(-\frac{\theta^{2}}{2\theta_{rms}^{2}})$<br>(exponential) |
 | small angle | large probability | very large probability |
 | large angle | small probability | almost none |
 
@@ -232,7 +232,7 @@ A chapter where **quantum theory** steps in to save the atom from collapsing.
 Now, let’s look at another mystery that puzzled scientists for decades - the **spectra** of elements.  
 
 When gases of different elements are excited, they don’t emit or absorb light across every wavelength.  
-Instead, they shine or darken at **very specific colors**, as though each atom were playing its own melody on the scale of light.  
+Instead, they shine or darken at **very specific colours**, as though each atom were playing its own melody on the scale of light.  
 
 Classical physics, however, couldn’t explain this at all.  
 If atoms behaved like tiny, classical oscillators, their energies should form a **continuous spectrum**, and they should absorb **every** wavelength from a light source.  
@@ -245,7 +245,7 @@ Let’s start with the simplest atom of all—**hydrogen**.
 ![Hydrogen spectra](hydrogen-spectra.png "Spectral lines of hydrogen in visible light range")
 
 Hydrogen emits four prominent visible lines:  
-<span style="color: #ffffff; background-color: #ff0000;">**656.3 nm**</span>, <span style="color: #000000; background-color: #00ceff;">**486.1 nm**</span>, <span style="color: #ffffff; background-color: #1400ff;">**434.0 nm**</span>, and <span style="color: #ffffff; background-color: #6500ff;">**410.2 nm**</span>.  
+<span style="colour: #ffffff; background-colour: #ff0000;">**656.3 nm**</span>, <span style="colour: #000000; background-colour: #00ceff;">**486.1 nm**</span>, <span style="colour: #ffffff; background-colour: #1400ff;">**434.0 nm**</span>, and <span style="colour: #ffffff; background-colour: #6500ff;">**410.2 nm**</span>.  
 
 Each one appears at a distinct wavelength—like carefully chosen notes in hydrogen’s luminous song.  
 
@@ -267,7 +267,7 @@ Yet, it was only an **empirical** discovery — it fit the data, but it didn’t
 
 ---
 
-A few years later, in 1888, **Johannes Rydberg** sought to generalize Balmer’s formula for hydrogen and other elements as well.  
+A few years later, in 1888, **Johannes Rydberg** sought to generalise Balmer’s formula for hydrogen and other elements as well.  
 He noticed that the **differences of wavenumbers** followed a consistent mathematical pattern based on the **squares of integers**.  
 By carefully fitting experimental results, he proposed this elegant relationship:  
 
@@ -296,7 +296,7 @@ the **Lyman series** in the ultraviolet (Theodore Lyman),
 and the **Paschen series** in the infrared (Friedrich Paschen).  
 
 Still… neither Balmer nor Rydberg could explain *why* these numbers worked so precisely.  
-That mystery awaited a new model of the atom - one where energy itself comes in **quantized steps**.  
+That mystery awaited a new model of the atom - one where energy itself comes in **quantised steps**.  
 
 And with that, we step ever closer to the bridge between physics and light - the **Bohr Model**.  
 
@@ -305,7 +305,7 @@ And with that, we step ever closer to the bridge between physics and light - the
 Now then, let’s take a closer look at how **Niels Bohr** reimagined the atom in 1913.  
 He proposed something quite remarkable: that electrons move in **circular orbits** around the nucleus, and—-this part is very important - they do **not lose energy** while doing so!  
 
-This idea was inspired by the concept of quantization.  
+This idea was inspired by the concept of quantisation.  
 Bohr expressed it mathematically as:  
 $$E=nh\nu=nh\frac{\omega}{2\pi}$$  
 where  
@@ -319,7 +319,7 @@ From the relationship between energy and angular momentum ($E = \frac{1}{2}L\ome
 $$L=mvr=n\frac{h}{2\pi}$$  
 
 Here, $L$ is the **angular momentum**-—and this, in essence, was Bohr’s **quantum hypothesis**.  
-Interestingly, the idea of linking angular momentum to quantized orbits was first inspired by **John W. Nicholson**.  
+Interestingly, the idea of linking angular momentum to quantised orbits was first inspired by **John W. Nicholson**.  
 
 ---
 
@@ -336,7 +336,7 @@ Now, for the electron’s **total energy**:
 > The kinetic energy is $E_{k} = \frac{1}{2}mv^{2}$,  
 > and the potential energy is $U = -\frac{1}{4\pi\epsilon_{0}}\frac{Ze_{0}^{2}}{r}$.  
 > Combining them gives:  
-> $$E-E_{k}+U=\frac{1}{2}mv^{2}-\frac{1}{4\pi\epsilon_{0}}\frac{Ze_{0}^{2}}{r}$$  
+> $$E=T+V=\frac{1}{2}mv^{2}-\frac{1}{4\pi\epsilon_{0}}\frac{Ze_{0}^{2}}{r}$$  
 > Substituting our expressions for $r$ and $v$, we find:  
 > $$E=-\frac{mZ^{2}e_{0}^{4}}{8\epsilon_{0}^{2}n^{2}h^{2}}$$  
 where  
@@ -344,7 +344,7 @@ where
 * $m$ is the **mass of the electron** ($9.109\times10^{-31}kg$),  
 * and $Z$ is the **atomic number**.  
 
-Thus, the electron can only exist in specific allowed orbits—each with its own quantized energy.  
+Thus, the electron can only exist in specific allowed orbits — each with its own quantised energy.  
 When an electron moves between these orbits, it either absorbs or emits a photon corresponding to that energy difference.  
 ![Bohr model](bohr-model.png "Bohr model")  
 
@@ -418,12 +418,12 @@ Electrons naturally **repel** one another, and this repulsion weakens the pull e
 Because of this, an electron doesn’t truly experience the full nuclear charge $+Ze_{0}$.  
 Instead, it feels a reduced attraction, called the **effective nuclear charge**, written as $Z_{eff}$.  
 
-So, to generalize the Rydberg formula for atoms beyond hydrogen, we use:  
+So, to generalise the Rydberg formula for atoms beyond hydrogen, we use:  
 $$\frac{1}{\lambda}=R_{\infty}(\frac{Z_{eff1}^{2}}{n_{1}^{2}}-\frac{Z_{eff2}^{2}}{n_{2}^{2}})$$  
 where
 
 * $R_{\infty}$ is the **Rydberg constant** ($R_{\infty}=\frac{m_{e}e_{0}^{4}}{8\epsilon_{0}^{2}h^{3}c}=1.09677583\times 10^{7}m^{-1}$),  
-* $Z_{eff1}$ is the **effective nuclear charge** of theintial state,  
+* $Z_{eff1}$ is the **effective nuclear charge** of the intial state,  
 * $Z_{eff2}$ is that of the final state.  
 
 Even though these refinements improved the model, they were still stepping stones.  
@@ -488,7 +488,7 @@ Let’s recall de Broglie’s relation $\lambda = h/p$.
 For an electron orbiting the nucleus, the condition for a standing wave is  
 $$2\pi r=n\lambda=\frac{nh}{mv}=n\hbar$$  
 
-This matches perfectly with Bohr’s quantization of angular momentum:  
+This matches perfectly with Bohr’s quantisation of angular momentum:  
 $$mvr=n\hbar$$  
 
 So, the once-mysterious rule of Bohr’s model found its foundation in the wave nature of matter.  
@@ -518,16 +518,16 @@ In 1917, **Rutherford** identified the **proton**, and in 1933, **James Chadwick
 With the neutron, we finally understood **isotopes** — variations of the same element with different masses.  
 
 Today, the atomic model is a beautiful picture:  
-a dense nucleus of **protons and neutrons** at the center, surrounded by a **cloud of electrons** forming a probabilistic envelope.  
-![electron cloud model](electron-cloud-model.png "Electron cloud model is recognized today")  
+a dense nucleus of **protons and neutrons** at the centre, surrounded by a **cloud of electrons** forming a probabilistic envelope.  
+![electron cloud model](electron-cloud-model.png "Electron cloud model is recognised today")  
 
 ---
 
 Understanding the atom is one of humanity’s **greatest scientific achievements**.  
 Once we understood atoms, we began to understand **matter itself**.  
-Quantum theory allows us to see the intricate structure and behavior of materials.  
+Quantum theory allows us to see the intricate structure and behaviour of materials.  
 
-Many of the brilliant minds who helped build the atomic model were recognized with **Nobel Prizes**:  
+Many of the brilliant minds who helped build the atomic model were recognised with **Nobel Prizes**:  
 
 |Scientist|Nobel Prize|Year|Awarded by|
 |:---:|:---:|:---:|:---:|
@@ -549,7 +549,7 @@ Many of the brilliant minds who helped build the atomic model were recognized wi
 
 ---
 
-Because understanding atoms unlocks the behavior of matter, these discoveries paved the way for modern science.  
+Because understanding atoms unlocks the behaviour of matter, these discoveries paved the way for modern science.  
 
 Using the **electron cloud model** and quantum theory, we can now explore matter at many levels:  
 from **atoms**, to **simple molecules**, and finally to **complex molecules and crystal structures**.  
