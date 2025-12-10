@@ -11,248 +11,234 @@ draft: False
 
 # Heisenberg's quantum mechanics
 
-Hello~ This is Chemistry Mastery Nahida.  
-Last time, we talked about how atomic model was changed by time.  
-**Bohr-Sommerfeld model** could explain the spectrum of hydrogen atom using **quantum hypothesis of angular momentum**.  
-However, it did not focus on fine structures of spectrum, so the model was fail to explaining them.  
-Even de Broglie provided the reason of the quantum hypothesis, but it is not related to the fine structure.  
-The **modern quantum mechanics** are developed along explaining the small properties of the atom.  
+Hello, traveler of knowledge~ This is **Chemistry Mastery Nahida**.  
+Last time, we explored how our picture of the atom slowly evolved through human curiosity.  
+The **Bohr–Sommerfeld model** beautifully explained the hydrogen spectrum with its quantised angular momentum…  
+but it couldn’t illuminate the subtle **fine structures** hiding behind the lines.  
+Even de Broglie’s wave-like insight didn’t resolve that mystery.  
 
-Three physicists, **Werner Heisenberg**, **Erwin Schrödinger**, and **Paul Dirac**, tried to represent quantum nature of the atom in their own style.  
+To reach deeper into the atom’s delicate heart, **modern quantum mechanics** had to be born.  
+
+Three brilliant minds — **Werner Heisenberg**, **Erwin Schrödinger**, and **Paul Dirac** — each tried to express the quantum world in their own unique language.  
 
 ---
 
 ## Heisenberg's insight
 
-Werner Heisenberg, a young physicist (born in 1901) in that time, proposed an outstanding idea:  
+Werner Heisenberg, still so young at the time (born in 1901), made a surprisingly bold suggestion:  
 
-> What if there were no orbits from the first?  
+> *“What if there were no orbits to begin with?”*  
 
-He thought the Bohr model failed because Bohr has assumed the orbit. There is no evidence the orbit is necessary.  
-He founded **modern quantum mechanics** by expressing the nature in very unique way.  
+He thought Bohr’s model struggled precisely because it **assumed** something we never actually observe:  
+the electron’s orbit.  
 
-He wants to represent the nature only with observable amounts.  
+So Heisenberg created a new foundation for quantum mechanics —  
+one built **only from observable quantities**, not imagined paths.  
+It was a daring idea, and it changed everything.  
 
-He used very brilliant math for explaining quantum world. He suggested the matrix form of observables.  
+He used wonderfully clever mathematics, expressing physical quantities as **matrices**.  
 
-In his *Umdeutung* (*reinterpretation* in German) paper, he noted the some physical amounts as:  
-$$p=\{p_{nm}\},~x=\{x_{nm}\}$$
+In his famous *Umdeutung* (*reinterpretation*) paper, he wrote things like:  
+$$p=\{p_{nm}\},\quad x=\{x_{nm}\}$$  
 
-He noted observables between quantum number $n$ and $m$. The time dependence can be expressed using **discrete Fourier transformation**:  
-$$A=\sum_{n,m}(A_{nm}e^{2\pi i\nu_{nm}t})$$
-where $A$ is any type of physical amounts.  
-(Fourier transformation is the expression of the observables from by time to by sum of frequencies.)  
+He connected observable transitions between quantum numbers \(n\) and \(m\).  
+Time dependence enters through a **discrete Fourier expansion**:
+$$A=\sum_{n,m} A_{nm} e^{2\pi i\nu_{nm} t}$$
+
+(Yes—Fourier transforms appear everywhere in physics. They let us rewrite time-behavior as a “song” of frequencies~)  
 ![Fourier transformation](fourier-transform.png "Fourier transformation")  
 Fourier transformation  
 
-The position $x$ can be also written as:  
-$$x(t)=\sum_{n,m}(x_{nm}e^{2\pi i\nu_{nm}t})$$
-In matrix form:  
-$$X(t)=(x_{nm}e^{2\pi i\nu_{nm}t})$$
+Position is written as:  
+$$x(t)=\sum_{n,m} x_{nm} e^{2\pi i\nu_{nm} t}$$  
+Matrix form:  
+$$X(t)=(x_{nm}e^{2\pi i\nu_{nm}t})$$  
 
-How about $x^{2}$?  
-He represented $x^{2}$ as:  
-$$(x^{2})_{nm}(t)=\sum_{k}x_{nk}(t)x_{km}(t)=\sum_{n,m}(\sum_{k}x_{mk}x_{kn}e^{i(\omega_{nk}+\omega_{kn})t})$$
-In matrix form:  
-$$(X(t))^{2}=X(t)X(t)=(\sum_{k}x_{mk}x_{kn}e^{i(\omega_{nk}+\omega_{kn})t})$$
-It seems complicated, but it's just a square of the **matrix** $X(t)$.  
+What about $x^{2}$?  
+Well… it’s simply:  
+$$(X(t))^{2}=X(t)X(t)=(\sum_{k}x_{mk}x_{kn}e^{2\pi i(\nu_{nk}+\nu_{kn})t})$$  
 
-How about $xy$ and $yx$?  
-$xy$ can be represented as:  
-$$(xy)_{nm}(t)=\sum_{k}x_{nk}(t)y_{km}(t)=\sum_{n,m}(\sum_{k}x_{mk}y_{kn}e^{i(\omega_{nk}+\omega_{kn})t})$$
-$yx$ is:  
-$$(yx)_{nm}(t)=\sum_{k}y_{nk}(t)x_{km}(t)=\sum_{n,m}(\sum_{k}y_{mk}x_{kn}e^{i(\omega_{nk}+\omega_{kn})t})$$
-They are also **matrix multiplications** of $XY$ and $YX$.  
-Like matrices, $xy\neq yx$.  
+And for products:  
+$$(xy)_{nm}=\sum_k x_{nk}y_{km}e^{2\pi i(\nu_{nk}+\nu_{km})t},\qquad (yx)_{nm}=\sum_k y_{nk}x_{km}e^{2\pi i(\nu_{nk}+\nu_{km})t}$$  
+
+Just like ordinary matrices, $xy\neq yx$.  
+This non-commutativity whispers the quantum nature hidden inside.  
+
+---
 
 ## Bohr-Sommerfeld model
 
-Before this work, Bohr-Sommerfeld model has suggested the quantum hypothesis as:  
-$$2\pi J=\oint_{c}pdx=nh$$
-where $p$ is momentum, $q$ is position, and $J$ is action (unit=$J\cdot s$).  
-(Action is time integration of Lagrangian ($J:=\int Ldt$, $L=T-V$). By Hamilton's principle, nature follows the route that minimising the value of action.)  
-Please note that:  
-> The definition above is from Hamiltonian mechanics. Bohr noted the action for periodic conitions as $J=\oint pdx$.  
-> Heisenberg used Bohr's notation, so we must consider additional $2\pi$ for his actual paper.  
-> I use action from Hamiltonian mechanics, so additional $2\pi$ is already applied.  
+## Bohr–Sommerfeld model
 
-He noted frequency between $n$ and $m$ as:  
-$$\nu(n,m)=\frac{E_{n}-E_{m}}{h}$$
+Before Heisenberg, the Bohr–Sommerfeld quantisation condition was:  
+$$2\pi J=\oint p\,dx = nh$$  
 
-He suggested **quantum frequency** between quantum numbers $n$, $m$, and $k$:  
-$$\nu(n,m)=\frac{E(n)-E(m)}{h},~\nu(n,m)=\nu(n,k)+\nu(k,m)$$
-For example, the energy for quantum number 1 to 3 is equal to sum of energies for 1 to 2 and 2 to 3.  
+Here, $J$ is the action — the nature’s “preferred route” minimising $\int Ldt$, where $L=T-V$ is Lagrangian.  
+Let me gently remind you:  
+
+> Bohr used the periodic-action formula ($J=\oint pdx$), so Heisenberg followed that notation.  
+> My explanation here uses Hamiltonian mechanics, where the factor $2\pi$ is included already.  
+
+Heisenberg wrote transition frequencies as:  
+$$\nu(n,m)=\frac{E_n - E_m}{h}$$  
+
+And he found a beautiful composition rule:  
+$$\nu(n,m)=\nu(n,k)+\nu(k,m)$$  
+
+Just as energy differences, frequencies can be added too~  
 ![Energy diagram](excitation.png "Energy diagram")  
-Since energy is proportional to frequency, we can write frequency as sum of its components.  
 
-Meanwhile, the classical frequency can be represented as:  
-$$2\pi\nu(n,n-1)=\frac{dE}{dJ}$$
+Classically, frequency satisfies:  
+$$2\pi\nu(n,n-1)=\frac{dE}{dJ}$$  
 
-Therefore,  
-$$2\pi\nu(n,n-1)=\frac{E_{n}-E_{m}}{\hbar}=\lim_{\Delta J\rightarrow 0}\frac{\Delta E}{\Delta J}=\frac{dE}{dJ}$$
-Since quantum intervals are very small to observe classically, so we can say:  
-$$\Delta J=J_{n}-J_{n-1}=\hbar$$
+Since quantum jumps are extremely small:  
+$$\Delta J = J_n - J_{n-1} = \hbar$$  
 
-Each steps of action has its interval $\hbar$.  
-Without using any orbits, we derived that **Bohr-Sommerfeld hypothesis** was true!  
+Isn’t it lovely?  
+Even **without orbits**, Heisenberg naturally retrieved the **Bohr–Sommerfeld hypothesis**.  
+
+---
 
 ## Quantum harmonic oscillator (July 1925)
 
-Further, Heisenberg explained how the **harmonic oscillators** act in **quantum**.  
-We imagine how the object with spring is moving in the quantum world.  
+Now, let’s step further into the quantum garden—  
+the **harmonic oscillator**, a tiny spring-like motion at the atomic scale.  
 
-The **quantum motion**, seems nobody haven't thought and tested before.  
-Let's try what happens to physical objects which are as small as single atom!  
-It's quite **different** to conventional Newtonian mechanics!  
+The classical equation is:  
+$$\frac{d^2x}{dt^2}+\omega_0^2 x = 0$$  
+with solution:  
+$$x=a_1\cos(\omega_0 t)$$  
 
-From the differential equation  
-$$\frac{d^2}{dt^2}x+\omega_{0}^{2}x=0$$
-The classical solution is:  
-$$x=a_{1}\cos(\omega_{0} t)$$
-with total energy:  
-$$E=T+V=\frac{1}{2}m\dot{x}^{2}+\frac{1}{2}m\omega_{0}^{2}x^{2}$$
+Heisenberg replaced the classical constants with quantum-indexed ones.  
+After his careful matrix analysis, he arrived at this elegant energy expression:  
+$$E=\frac{h\omega_0}{2\pi}\left(n+\frac{1}{2}\right)$$  
 
-He applied quantum forms to $a_{1}$ and $\omega_{0}$.  
+That means:  
 
-He concluded the energy of quantum harmonic oscillator as:  
-$$E=\frac{h\omega_{0}}{2\pi}(n+\frac{1}{2})$$
-It means the energy of harmonic oscillator is **discrete**, having the **constant intervals** $\hbar\omega_{0}$!  
-Moreover, the **zero point energy is not absolutely zero**!  
-The object has some energy even in zero temperature.  
-So we have to define **zero point energy(ZPE)** to describe where is the exact zero point.  
+* Energy is **quantised** in equal intervals $\hbar \omega_0$.  
+* Even at the lowest state, the oscillator has **non-zero energy** — the **zero-point energy (ZPE)**.  
+
 ![harmonic oscillator](zpe.png "Quantum harmonic oscillator has nonzero zero-point energy")  
 
-## Born-Jordan quantisation postulate (September 1925, November 1925)
+The quantum world never sits completely still…  
+It always trembles with tiny fluctuations.  
 
-Another notable physicists, **Max Born**, and **Pascual Jordan**, want to find relationship between classical and quantum mechanics.  
-Based on Hamiltonian mechanics and Heisenberg's idea, they suggested the relation as:  
-$$\bold{x}\bold{p}-\bold{p}\bold{x}=\frac{ih}{2\pi}\bold{I}$$
-where
+---
 
-* $\bold{p}$ is the matrix form of momentum
-* $\bold{x}$ is the matrix form of position
-* $\bold{I}$ is the identity matrix
+## Born-Jordan quantisation postulate (September-November 1925)
 
-This relation is simply written using commutator operator.  
-$$[x,p]=i\hbar$$
-where $[x,p]:=xp-px$. (Since $x$ and $p$ are matrices, so they do not commute in multiplication. ($xp\neq px$))  
+**Max Born** and **Pascual Jordan** sought a bridge between classical action and Heisenberg’s new quantum rules.  
 
-By writing this relation in quantum form, we can get quantum condition as:  
-$$\sum_{n}(x_{n,n+1}p_{n+1,n}-p_{n,n+1}x_{n+1,n})=i\hbar$$
+They proposed:  
+$$\mathbf{x}\mathbf{p}-\mathbf{p}\mathbf{x}=\frac{ih}{2\pi}\mathbf{I}$$  
+
+In the compact operator form:  
+$$[x,p]=i\hbar$$  
+
+This commutator is one of the most important seeds in all quantum theory.  
+It states, very gently but firmly, that **order matters** in quantum operations.  
+
+---
 
 ## Uncertainty principle (1927)
 
-Heisenberg wants to know **how accuracy is represented** in quantum.  
-If we measure $\eta$, how is the **probability distributed** by how accurate the position is measured?  
-He first considered probability amplitude $S(\eta,x)$.  
-Near specific position $x'$, the error of position becomes $x_{1}$.  
-The probability $S(\eta,x)$ follows **Gaussian distribution**:  
-$$S(\eta,x)\propto\exp(-\frac{(x-x')^{2}}{2x_{1}^{2}}-\frac{2\pi i}{h}p'(x-x'))$$
-And then, let's consider $S(\eta,p)$.  
-We can write $S(\eta,p)$ as:  
-$$S(\eta,p)=\int_{-\infty}^{\infty} S(\eta,x)S(x,p)dx$$
-He has done work with Born and Jordan, so he already knows $S(x,p)$ is written as:  
-$$S(x,p)=\langle x|p\rangle \propto e^{2\pi ipx/h}$$
-The form is based on Born and Jordan's quantisation postulate $[x,p]=i\hbar$.  
-Therefore, we can write $S(\eta,p)$ as:  
-$$S(\eta,p)\propto\int_{-\infty}^{\infty} \exp(\frac{2\pi i(p-p')x}{h}-\frac{(x'-x)^{2}}{2x_{1}^{2}})dx$$
-He obtains $S(\eta,p)$ having the same structure as $S(\eta,x)$.  
-$$S(\eta,p)\propto \exp(-\frac{(p-p')^{2}}{2p_{1}^{2}}+\frac{2\pi i}{h}x'(p-p'))$$
-From analysis of Gaussian distribution, he finally derived the famous **uncertainty principle** (*Unschärferelation*)!
-$$p_{1}x_{1}=\frac{h}{2\pi}$$
+Heisenberg then asked a subtle question:  
 
-From his theory, the accuracy of momentum and position are **inverse-proportional**.  
-If we measure momentum accurately, we don't know where exactly the particle is.  
-Otherwise, if we measure position accurately, we don't know how fast the particle passes its position.  
+> *If we measure something with limited accuracy, how does nature respond?*  
 
+He studied probability amplitudes like $S(\eta,x)$, which behave as Gaussians:  
+$$S(\eta,x)\propto\exp\!\left(-\frac{(x-x')^2}{2x_1^2}-\frac{2\pi i}{h}p'(x-x')\right)$$  
+
+Switching to momentum using:  
+$$S(x,p)=\langle x|p\rangle\propto e^{2\pi i px/h}$$  
+
+he obtained the momentum distribution:  
+$$S(\eta,p)=\int S(\eta,x)S(x,p)dx\propto\exp\!\left(-\frac{(p-p')^2}{2p_1^2}+\frac{2\pi i}{h}x'(p-p')\right)$$  
+
+From here blooms the famous **uncertainty principle**:  
+$$p_1 x_1 = \frac{h}{2\pi}$$  
+
+Later refined into the standard form:  
+$$\Delta x\,\Delta p \ge \frac{\hbar}{2}$$  
+
+In quantum mechanics, some pairs of quantities simply refuse to be known perfectly at the same moment.  
+It’s not a failure of our tools…  
+It’s part of nature’s own poetry.  
 ![uncertainty principle](uncertainty-principle.png "It is impossible to measure position and momentum accurately at the same time.")  
 
-Meanwhile, Earle Kennard and Hermann Weyl have done further research and today we write uncertainty principle as:  
-$$\Delta x \Delta p \geq \frac{\hbar}{2}$$
-where
-
-* $\Delta x$ is the standard deviation of position  
-* $\Delta p$ is the standard deviation of momentum  
-
-This revolutionary thought changed our mind on measurement.  
-In quantum, we **cannot measure** both momentum and position **accurately at the same time**!  
+---
 
 ## Heisenberg in chemistry
 
-Actually, chemists **do not directly use** Heisenberg's theories. Chemists feel his theories are too **abstract**.  
-He pursued using **only observables**, so there are **no wavefunctions**, and **no orbitals**.  
-Chemists prefer **Schrödinger equation** in practical ways for explaining chemistry.  
-Schrödinger's method, **equivalent** to Heisenberg, is more **intuitive** to understand Chemistry.  
-After theoretical chemists, such as Linus Pauling, Kenichi Fukui, have suggested how to explain chemistry using orbitals.  
+Chemists usually don’t *directly* use Heisenberg’s matrix mechanics —  
+it feels a bit too **abstract** for describing molecules.  
+No wavefunctions, no orbitals… it’s a little lonely for chemistry.  
 
-However, Heisenberg's theories are the bedrock for understanding further theories, such as Hartree-Fock, are essential to understand quantum chemistry.  
+Instead, we often use **Schrödinger’s equation**, which is mathematically equivalent but much more **intuitive**.  
+Later chemists — like Linus Pauling and Kenichi Fukui — grew entire gardens of theory from Schrödinger’s orbitals.  
+
+Still, Heisenberg’s ideas form the **foundation** beneath modern quantum chemistry.  
+Without them, chemically important methods like Hartree–Fock could never have bloomed.  
+
+---
 
 ## Derivation of quantum harmonic oscillator
 
-> He first described the position as:  
-> $$x(n,t)=\sum_{\alpha}x(n,\alpha)e^{i\omega(n)\alpha t}$$
-> Then, the action is written as:  
-> $$2\pi J=\oint_{c}pdx=m\oint_{c}\dot{x}^{2}dt=2\pi m\sum_{\alpha}|x(n,\alpha)|^{2}\alpha^{2}\omega(n)$$
-> From Bohr-Sommerfeld's hypothesis, we can write the classical action as:  
-> $$2\pi dJ=hdn$$
-> He wrote the classical Planck constant $h$ using the action:  
-> $$h_{classical}=2\pi\frac{dJ}{dn}=2\pi m\sum_{\alpha}\alpha\frac{d}{dn}(\alpha\omega(n)|x(n,\alpha)|^{2})$$
-> By Kramers' dispersion theory, we can write the quantum form of differentiation as:  
-> $$\alpha\frac{dA(n,\alpha)}{dn}=A(n+\alpha,n)-A(n,n-\alpha)$$
-> Therefore, the **quantum Planck constant** becomes:  
-> $$h_{quantum}=4\pi m\sum_{\alpha}(|x(n,n+\alpha)|^{2}\omega(n,n+\alpha)-|x(n,n-\alpha)|^{2}\omega(n,n-\alpha))$$
+He first wrote the position as  
+$$x(n,t)=\sum_{\alpha}x(n,\alpha)e^{i\omega(n)\alpha t}$$  
+and the action  
+$$2\pi J=m\oint\dot x^{2}dt=2\pi m\sum_\alpha |x(n,\alpha)|^{2}\alpha^{2}\omega(n)$$  
 
-The differential equation of the system is given as:  
-$$\frac{d^2}{dt^2}x+\omega_{0}^{2}x=0$$
-The classical solution is:  
-$$x=a_{1}\cos(\omega_{0} t)$$
+Using Bohr–Sommerfeld:  
+$$2\pi dJ = h dn$$  
 
-In classical mechanics, $a_{1}$ and $\omega_{0}$ are constant.  
-> Let's assume that $a$ and $\omega$ only depends on quantum number.  
-> We write:  
-> $$a_{1}=a(n,n-1)$$
-> $$\omega_{0}=\omega(n,n-1)$$
-> We can write the quantum form as:  
-> $$x=a(n,n-1)\cos(\omega(n,n-1)t)=\frac{a(n,n-1)}{2}e^{i\omega(n,n-1)t}+\frac{a(n-1,n)}{2}e^{i\omega(n-1,n)t}$$
-> From quantum Planck constant, we can get:  
-> $$(a(n,n+1))^{2}-(a(n,n-1))^{2}=\frac{h}{\pi m\omega_{0}}=k$$
-> Since $x$ is real number, so $x$ satisfies commutativity.  
-> $$x(n,n-\alpha)=x(n-\alpha,n)$$
-> If we have an initial value of $a(n,n-1)$, we can get a general form.  
-> For $a(0,-1)$, since the state with negative quantum number does not exist, we can set the initial condition:  
-> $$a(0,-1)=0$$
-> From this, we can get:  
-> $$a(n,n-1)=\sqrt{\frac{nh}{\pi m\omega_{0}}}$$
+And by Kramers’ quantisation rule:  
+$$\alpha\frac{dA(n,\alpha)}{dn}=A(n+\alpha,n)-A(n,n-\alpha)$$  
 
-Let's apply them into the total energy!  
-The total energy of harmonic oscillator is written as:  
-$$E=T+V=\frac{1}{2}m\dot{x}^{2}+\frac{1}{2}m\omega_{0}^{2}x^{2}$$
-Since the total energy is conserved, so  
-$$E(n,t)=\sum_{\alpha}E(n,n-\alpha)e^{i\omega(n,n-\alpha)t}=H(n,n)$$
+The quantum Planck constant becomes:  
+$$h_{quantum}=4\pi m\sum_{\alpha}\Big(|x(n,n+\alpha)|^{2}\omega(n,n+\alpha)-|x(n,n-\alpha)|^{2}\omega(n,n-\alpha)\Big)$$  
 
-He concluded the energy of quantum harmonic oscillator as:  
-$$E=\frac{h\omega_{0}}{2\pi}(n+\frac{1}{2})$$
+Next, assume:  
+$$a_1=a(n,n-1),\quad \omega_0=\omega(n,n-1)$$  
 
+Position becomes:  
+$$x=\frac{a(n,n-1)}{2}e^{i\omega(n,n-1)t}+\frac{a(n-1,n)}{2}e^{i\omega(n-1,n)t}$$  
+
+The amplitude satisfies:  
+$$(a(n,n+1))^2-(a(n,n-1))^2=\frac{h}{\pi m\omega_0}=k$$  
+
+With the boundary condition $a(0,-1)=0$:  
+$$a(n,n-1)=\sqrt{\frac{nh}{\pi m\omega_0}}$$  
+
+Total energy:  
+$$E=T+V=\frac12m\dot x^2+\frac12 m\omega_0^2 x^2$$  
+and the final result:  
+$$E=\frac{h\omega_0}{2\pi}\left(n+\frac{1}{2}\right)$$  
+
+---
 ## Derivation of Born-Jordan quantisation postulate
 
-Born and Jordan first reminded Hamilton equation:  
-$$\dot{x}=\frac{\partial H}{\partial p}=\frac{p}{m},~\dot{p}=-\frac{\partial H}{\partial x}=-\frac{\partial U}{\partial x}$$
-Where $U$ is internal energy of system.  
-It's the same as Newtonian mechanics. $p=m\dot{x}$ and $dU=-\dot{p}dx$.  
-They started to use concepts of matrix from Heisenberg's notation.  
-Heisenberg noted $p$ and $x$ as:  
-$$p=\sum_{\tau=-\infty}^{\infty}p_{\tau}e^{2\pi i\nu\tau t},~x=\sum_{\tau=-\infty}^{\infty}x_{\tau}e^{2\pi i\nu\tau t}$$
-Apply it to classical action  
-$$2\pi J=\oint pdq=\int_{0}^{1/\nu}p\dot{q}dt$$
-The relation of $p$ and $x$ can be written as:  
-$$1=i\sum_{\tau=-\infty}^{\infty}\tau\frac{\partial}{\partial J}(x_{\tau}p_{-\tau})$$
-Let's apply the quantum term into above.  
-$\sum_{\tau=-\infty}^{\infty}\tau\frac{\partial}{\partial J}(x_{\tau},p_{-\tau})$ can be written as quantum form:  
-$$\frac{1}{h}\sum_{\tau=-\infty}^{\infty}(x(n+\tau,n)p(n,n+\tau)-x(n,n-\tau)p(n-\tau,n))$$
-Therefore, we can finally get:  
-$$\sum_{k}(p(nk)x(kn)-x(nk)p(kn))=\frac{h}{2\pi i}$$
-It's equivalent to  
-$$[\bold{p},\bold{x}]=-i\hbar\bold{I}$$
+Hamilton’s equations:  
+$$\dot{x}=\frac{p}{m},\qquad \dot{p}=-\frac{\partial U}{\partial x}$$  
+
+Heisenberg expanded $p$ and $x$ in Fourier form:  
+$$p=\sum_\tau p_\tau e^{2\pi i\nu\tau t},\quad x=\sum_\tau x_\tau e^{2\pi i\nu\tau t}$$  
+
+Classical action:  
+$$2\pi J=\int_{0}^{1/\nu}p\dot q dt$$  
+
+From this,  
+$$1=i\sum_{\tau}\tau\frac{\partial}{\partial J}(x_\tau p_{-\tau})$$  
+
+Replacing the derivative with its quantum counterpart:  
+$$\frac{1}{h}\sum_{\tau}[x(n+\tau,n)p(n,n+\tau)-x(n,n-\tau)p(n-\tau,n)]$$  
+
+Finally:  
+$$\sum_k[p(nk)x(kn)-x(nk)p(kn)] = \frac{h}{2\pi i}$$  
+or simply:  
+$$[\mathbf{p},\mathbf{x}] = -i\hbar\mathbf{I}$$  
+
+---
 
 ## References
 
