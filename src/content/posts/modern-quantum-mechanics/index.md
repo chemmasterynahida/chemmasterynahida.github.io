@@ -262,8 +262,6 @@ Matrix mechanics - Wikipedia
 <https://en.wikipedia.org/wiki/Matrix_mechanics>  
 Uncertainty principle - Wikipedia  
 <https://en.wikipedia.org/wiki/Uncertainty_principle>  
-Bohr-Einstein devates - Wikipedia  
-<https://en.wikipedia.org/wiki/Bohr%E2%80%93Einstein_debates>
 Heisenberg, W. (1925). Über quantentheoretische Umdeutung kinematischer und mechanischer Beziehungen. Zeitschrift für Physik, 33, 879–893.  
 <https://doi.org/10.1007/BF01328377>  
 Born, M., Jordan, P. Zur Quantenmechanik. Z. Physik 34, 858–888 (1925).  
