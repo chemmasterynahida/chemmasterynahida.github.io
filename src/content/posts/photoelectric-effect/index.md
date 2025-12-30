@@ -2,7 +2,7 @@
 title: "Quantum Chemistry: 1.2. Photoelectric Effect and Property of Light"
 published: 2025-10-16
 description: "How did Einstein’s theory changed our understanding of light?"
-image: "photoelectric-effect.png"
+image: "https://gcore.jsdelivr.net/gh/chemmasterynahida/assets/common/photoelectric-effect/photoelectric-effect.png"
 tags: ["Quantum Chemistry"]
 category: Quantum Chemistry
 lang: en
@@ -65,7 +65,7 @@ After Hertz’s observation, other researchers sought to understand this strange
 Among them, **Aleksandr Stoletov** and **Philipp Lenard** conducted some of the most detailed studies.  
 They carried out quantitative measurements, while Lenard discovered that ultraviolet light could even ionise gas molecules—freeing electrons from their bonds.  
 
-![Lenard's experiment](lenard-experiment.png "lenard's experiment")  
+![Lenard's experiment](https://gcore.jsdelivr.net/gh/chemmasterynahida/assets/common/photoelectric-effect/lenard-experiment.png "lenard's experiment")  
 
 This is *Lenard’s apparatus*. He carefully examined how the light caused electrons to escape from metal surfaces.  
 
@@ -73,7 +73,7 @@ To test their behaviour, he used what’s called the **stopping potential**.
 If the metal releases electrons, we can apply a negative voltage to push them back—like setting up a small invisible barrier.  
 The stronger the negative potential, the more energy an electron needs to overcome it and escape.  
 
-![Lenard's observation](lenard-stop-potential.jpg "Lenard's observation")  
+![Lenard's observation](https://gcore.jsdelivr.net/gh/chemmasterynahida/assets/common/photoelectric-effect/lenard-stop-potential.jpg "Lenard's observation")  
 
 Through his experiments, Lenard discovered something truly intriguing:  
 the **stopping potential** became larger when the **light’s frequency** increased.  
@@ -86,7 +86,7 @@ A small clue, perhaps, but one that would soon inspire *Einstein* to rethink the
 According to *Young’s double-slit experiment* and *Maxwell’s theory*, light behaves as an electromagnetic wave.  
 If that’s true… then what should we expect to happen?  
 
-![Double slit](Double-slit.png "Double-slit experiment")  
+![Double slit](https://gcore.jsdelivr.net/gh/chemmasterynahida/assets/common/photoelectric-effect/Double-slit.png "Double-slit experiment")  
 
 When light shines upon a metal, its waves should gradually **transfer energy** to the electrons within.  
 Once an electron gathers enough energy, it should be able to escape the surface—just like a tiny swimmer catching a wave strong enough to carry him/her to shore.  
@@ -115,7 +115,7 @@ He asked himself a daring question:
 Planck had already proposed that energy doesn’t flow continuously, but comes in small packets — each with an energy of $h\nu$.  
 So, if we imagine light as a collection of these **energy quanta**, each particle of light — or **photon**, as we call it now — could strike an electron inside the metal.  
 
-![Photoelectric effect](photoelectric-effect.png "Photoelectric effect")  
+![Photoelectric effect](https://gcore.jsdelivr.net/gh/chemmasterynahida/assets/common/photoelectric-effect/photoelectric-effect.png "Photoelectric effect")  
 
 Within the metal, electrons are bound by the attractive forces of the atoms.  
 To free one, the incoming photon must give it enough energy to overcome this bond.  
@@ -145,7 +145,7 @@ Years later, in 1916, *Robert Millikan* put Einstein’s theory to the test.
 He measured the energy of the emitted electrons at different light frequencies… and discovered that the relationship was perfectly linear — just as Einstein predicted.  
 The slope of the line matched the constant $h$ itself!  
 
-![Millikan's experiment](kinetic-energy.png "Millikan's experiment")  
+![Millikan's experiment](https://gcore.jsdelivr.net/gh/chemmasterynahida/assets/common/photoelectric-effect/kinetic-energy.png "Millikan's experiment")  
 
 A single equation, a single idea — and suddenly, light was no longer just a wave.  
 It can be both **wave and particle**, dancing between two forms of truth.  

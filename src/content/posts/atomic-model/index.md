@@ -2,7 +2,7 @@
 title: "Quantum Chemistry: 1.3. Atomic model"
 published: 2025-10-24
 description: "How the atomic structure is explained, and what obstacle should be overcome?"
-image: "electron-cloud-model.png"
+image: "https://gcore.jsdelivr.net/gh/chemmasterynahida/assets/common/atomic-model/electron-cloud-model.png"
 tags: ["Quantum Chemistry"]
 category: Quantum Chemistry
 lang: en
@@ -57,12 +57,12 @@ In 1897, **Joseph J. Thomson** began investigating a mysterious phenomenon known
 These rays were emitted from the cathode in a tube filled with low-pressure gas, when a high voltage was applied.  
 
 By applying **electric** and **magnetic** fields, Thomson noticed something fascinating - the cathode rays **bent** in response!  
-![magnetic-deflection](magnetic-deflection.png "magnetic-deflection")  
+![Magnetic deflection](https://gcore.jsdelivr.net/gh/chemmasterynahida/assets/common/atomic-model/magnetic-deflection.png "Magnetic deflection")  
 This bending revealed that the rays carried **charge**, just like moving particles would.  
 
 ---
 
-![Thomson's experiment](thomson-equipment.png "Thomson's experiment")  
+![Thomson's experiment](https://gcore.jsdelivr.net/gh/chemmasterynahida/assets/common/atomic-model/thomson-equipment.png "Thomson's experiment")  
 Through careful measurements, Thomson found that the rays behaved as a **stream of charged particles**.  
 By balancing the magnetic and electric forces—so that the beam went **perfectly straight** - he could determine the ratio of charge to mass, known as $e/m$.  
 
@@ -83,9 +83,9 @@ And that’s how the **electron** was discovered.
 In 1905, building on this discovery, Thomson proposed a new way to imagine the atom.  
 He suggested that the negatively charged electrons were embedded within a sphere of **positive charge**,  
 much like raisins scattered throughout a pudding.  
-![plum pudding](pudding.jfif "plum pudding")  
+![plum pudding](https://gcore.jsdelivr.net/gh/chemmasterynahida/assets/common/atomic-model/pudding.jfif "plum pudding")  
 He called it the **Plum Pudding Model**.  
-![plum pudding model](plum-pudding-model.jpg "plum pudding model")  
+![plum pudding model](https://gcore.jsdelivr.net/gh/chemmasterynahida/assets/common/atomic-model/plum-pudding-model.jpg "plum pudding model")  
 
 At first, it seemed reasonable — the electrons could be arranged evenly, each performing a gentle harmonic motion within the positively charged “jelly.”  
 Mathematically, that looked stable... but physics had other ideas.  
@@ -114,7 +114,7 @@ if an atom were like a soft, positively charged jelly, the alpha particles would
 
 But what they actually observed... was **astonishing**.  
 Some alpha particles deflected sharply, and a few even bounced **straight back**!  
-![Geiger Marsden experiment](rutherford-experiment.png "Geiger-Marsden experiment")  
+![Geiger Marsden experiment](https://gcore.jsdelivr.net/gh/chemmasterynahida/assets/common/atomic-model/rutherford-experiment.png "Geiger-Marsden experiment")  
 
 ---
 
@@ -148,7 +148,7 @@ was concentrated in a tiny central **nucleus**.
 
 To describe how the alpha particles were deflected, he modeled their paths as **hyperbolic orbits**, and derived the formula for the **scattering angle**:  
 
-![Geometry of the model](rutherford-explanation.png "Geometry of the model")  
+![Geometry of the model](https://gcore.jsdelivr.net/gh/chemmasterynahida/assets/common/atomic-model/rutherford-explanation.png "Geometry of the model")  
 $$\theta = 2~arctan\left(\frac{r_{min}}{2b}\right) = 2~arctan\left(\frac{1}{4\pi\epsilon_{0}} \frac{q_{\alpha}q_{Z}}{2bE_{\alpha}}\right)$$  
 
 where:  
@@ -165,7 +165,7 @@ From a few tiny flashes on a screen, Rutherford revealed a whole new vision of m
 The key difference between **Thomson’s model** and **Rutherford’s** lies in how the particles scatter.  
 To understand why some alpha particles were deflected backward, we need to see how the scattering angle behaves.  
 
-![Geometry of scattering](scattering-geometry.png "Geometry of scattering")
+![Geometry of scattering](https://gcore.jsdelivr.net/gh/chemmasterynahida/assets/common/atomic-model/scattering-geometry.png "Geometry of scattering")
 
 Rutherford described the **differential cross section**, which tells us how likely particles are to scatter at a given angle:  
 
@@ -211,7 +211,7 @@ This led to a revolutionary idea:
 > The atom resembles a miniature solar system.  
 > Electrons, carrying negative charge, **orbit** a positively charged nucleus - just as planets circle a star.  
 
-![Rutherford's model](rutherford-model.jpg "Rutherford's model")
+![Rutherford's model](https://gcore.jsdelivr.net/gh/chemmasterynahida/assets/common/atomic-model/rutherford-model.jpg "Rutherford's model")
 
 ---
 
@@ -221,7 +221,7 @@ If electrons truly orbit the nucleus, they’re constantly **accelerating** - an
 That means the electrons would spiral inward,  
 causing the atom to **collapse entirely** within a tiny fraction of a second!  
 
-![collapsing atom](atom-collapse.jpg "Rutherford's model will be collapsed")
+![collapsing atom](https://gcore.jsdelivr.net/gh/chemmasterynahida/assets/common/atomic-model/atom-collapse.jpg "Rutherford's model will be collapsed")
 
 So... how could atoms possibly remain stable?  
 This question—simple yet profound—would soon lead to a new chapter in physics.  
@@ -242,7 +242,7 @@ But that wasn’t what experiments showed.
 
 Let’s start with the simplest atom of all—**hydrogen**.  
 
-![Hydrogen spectra](hydrogen-spectra.png "Spectral lines of hydrogen in visible light range")
+![Hydrogen spectra](https://gcore.jsdelivr.net/gh/chemmasterynahida/assets/common/atomic-model/hydrogen-spectra.png "Spectral lines of hydrogen in visible light range")
 
 Hydrogen emits four prominent visible lines:  
 <span style="colour: #ffffff; background-colour: #ff0000;">**656.3 nm**</span>, <span style="colour: #000000; background-colour: #00ceff;">**486.1 nm**</span>, <span style="colour: #ffffff; background-colour: #1400ff;">**434.0 nm**</span>, and <span style="colour: #ffffff; background-colour: #6500ff;">**410.2 nm**</span>.  
@@ -324,21 +324,9 @@ Interestingly, the idea of linking angular momentum to quantised orbits was firs
 ---
 
 Using **classical mechanics**, Bohr derived the radius and energy of each orbit.  
-> Let’s recall:  
-> The electron carries a charge of $-e_{0}$, while the nucleus holds $+Ze_{0}$.  
-> For an electron in orbit, the **Coulombic attraction** must balance the **centrifugal force**:  
-> $$\frac{1}{4\pi\epsilon_{0}}\frac{Ze_{0}^{2}}{r^{2}}=\frac{mv^{2}}{r}$$  
-> From the angular momentum relation, we know that:  
-> $$v=\frac{nh}{2\pi mr}$$  
-> Substituting this in and solving for $r$ gives:  
-> $$r=\frac{n^{2}h^{2}\epsilon_{0}}{\pi Ze_{0}^{2}m}$$  
-Now, for the electron’s **total energy**:  
-> The kinetic energy is $E_{k} = \frac{1}{2}mv^{2}$,  
-> and the potential energy is $U = -\frac{1}{4\pi\epsilon_{0}}\frac{Ze_{0}^{2}}{r}$.  
-> Combining them gives:  
-> $$E=T+V=\frac{1}{2}mv^{2}-\frac{1}{4\pi\epsilon_{0}}\frac{Ze_{0}^{2}}{r}$$  
-> Substituting our expressions for $r$ and $v$, we find:  
-> $$E=-\frac{mZ^{2}e_{0}^{4}}{8\epsilon_{0}^{2}n^{2}h^{2}}$$  
+
+$$r=\frac{n^{2}h^{2}\epsilon_{0}}{\pi Ze_{0}^{2}m}$$  
+$$E=-\frac{mZ^{2}e_{0}^{4}}{8\epsilon_{0}^{2}n^{2}h^{2}}$$  
 where  
 
 * $m$ is the **mass of the electron** ($9.109\times10^{-31}kg$),  
@@ -346,7 +334,7 @@ where
 
 Thus, the electron can only exist in specific allowed orbits — each with its own quantised energy.  
 When an electron moves between these orbits, it either absorbs or emits a photon corresponding to that energy difference.  
-![Bohr model](bohr-model.png "Bohr model")  
+![Bohr model](https://gcore.jsdelivr.net/gh/chemmasterynahida/assets/common/atomic-model/bohr-model.png "Bohr model")  
 
 From this, Bohr beautifully linked his model to Rydberg’s formula:  
 $$\frac{1}{\lambda}=R_{\infty}Z^{2}(\frac{1}{n_{1}^{2}}-\frac{1}{n_{2}^{2}}),~R_{\infty}=\frac{m_{e}e_{0}^{4}}{8\epsilon_{0}^{2}h^{3}c}$$  
@@ -373,13 +361,13 @@ When scientists placed atoms in **electric** or **magnetic** fields, the spectra
 This splitting was called the **Stark effect** when caused by an electric field,  
 and the **Zeeman effect** when caused by a magnetic field.  
 
-![Stark effect for hydrogen](stark-effect.png "Stark effect for hydrogen")  
+![Stark effect for hydrogen](https://gcore.jsdelivr.net/gh/chemmasterynahida/assets/common/atomic-model/stark-effect.png "Stark effect for hydrogen")  
 *Stark effect for hydrogen*  
 
-![Zeeman effect for Rb-87](zeeman-effect.png "Zeeman effect for Rb-87")  
+![Zeeman effect for Rb-87](https://gcore.jsdelivr.net/gh/chemmasterynahida/assets/common/atomic-model/zeeman-effect.png "Zeeman effect for Rb-87")  
 *Zeeman effect for rubidium-87*  
 
-To explain these delicate phenomena, **Arnold Sommerfeld** - together with **Alfred Landé** - expanded Bohr’s theory.  
+To explain these delicate phenomena, **Arnold Sommerfeld** - together with his student, **Alfred Landé** - expanded Bohr’s theory.  
 They introduced two new quantum numbers: the **angular quantum number** $l$ and the **magnetic quantum number** $m$.  
 
 ---
@@ -394,10 +382,7 @@ where
 * $p_{r}$ is the **radial momentum**,  
 * $p_{\phi}$ is the **angular momentum** ($p_{\phi} = m v_{\phi} r$).  
 
-He also incorporated **special relativity**, which expresses kinetic energy as:  
-$$E_{k}=(\gamma-1)mc^{2},~\gamma=1/\sqrt{1-v^{2}/c^{2}}$$
-
-By including these refinements, Sommerfeld derived a more accurate energy formula:  
+By including this refinement with **special relativity**, Sommerfeld derived the more accurate energy formula:  
 $$E_{n,l}=-\frac{mc^{2}\alpha^{2}Z^{2}}{2n^{2}}(1+\frac{\alpha^{2}Z^{2}}{n}(\frac{n}{l+1/2}-\frac{3}{4})+O(\alpha^{4})),~\alpha=\frac{e_{0}^{2}}{2\epsilon_{0}hc}$$  
 
 This model beautifully explained the **fine structure** and the **Stark effect**—-but only for **hydrogen**.  
@@ -439,7 +424,7 @@ Inspired by Einstein’s idea that light **behaves as both a wave and a particle
 
 > “If light — a wave — can act like a particle, might matter — a particle — also act like a wave?”
 
-He blended Einstein’s *wave–particle duality* with *special relativity*.  
+He blended Einstein’s concept of *wave–particle duality* with *special relativity*.  
 According to relativity, the total energy is expressed as  
 $$E^{2}=p^{2}c^{2}+(m_{0}c^{2})^{2}$$  
 Even **light**, which has no rest mass, still carries **momentum**, as proven by Compton’s scattering experiment.  
@@ -464,7 +449,7 @@ but the universe soon revealed its truth.
 ### The Proof
 
 In 1927, **Clinton Davisson** and **Lester Germer**, and independently **George P. Thomson**, performed experiments showing that electrons can interfere with themselves — just like light waves do!  
-![electron-interference](electron-interference.png "Electron can interfere")  
+![electron-interference](https://gcore.jsdelivr.net/gh/chemmasterynahida/assets/common/atomic-model/electron-interference.png "Electron can interfere")  
 
 *Electrons behaving like waves, forming interference patterns*.  
 
@@ -519,7 +504,7 @@ With the neutron, we finally understood **isotopes** — variations of the same 
 
 Today, the atomic model is a beautiful picture:  
 a dense nucleus of **protons and neutrons** at the centre, surrounded by a **cloud of electrons** forming a probabilistic envelope.  
-![electron cloud model](electron-cloud-model.png "Electron cloud model is recognised today")  
+![electron cloud model](https://gcore.jsdelivr.net/gh/chemmasterynahida/assets/common/atomic-model/electron-cloud-model.png "Electron cloud model is recognised today")  
 
 ---
 
@@ -571,7 +556,7 @@ To fully understand this, we need a few key ideas (which we will explore in more
 * For many-electron atoms, the order of energies is:  
   $1s→2s→2p→3s→3p→4s→3d→4p→5s→4d→5p→6s→4f→5d→6p→\cdots$  
 
-![periodic table](periodic-table.png "alkali metals in periodic table")  
+![periodic table](https://gcore.jsdelivr.net/gh/chemmasterynahida/assets/common/atomic-model/periodic-table.png "alkali metals in periodic table")  
 Applying these ideas, we notice a fascinating pattern:
 
 * The first **2s** electron appears in the 3rd element,  
@@ -584,6 +569,24 @@ These correspond to **alkali metals**: Li, Na, K, Rb, Cs…
 They share **similar chemical properties** because they all have the **same number of valence electrons**.  
 
 We will explore this more carefully when we discuss **many-electron atoms**.  
+
+## Bohr's atomic model derivation
+
+> Let’s recall:  
+> The electron carries a charge of $-e_{0}$, while the nucleus holds $+Ze_{0}$.  
+> For an electron in orbit, the **Coulombic attraction** must balance the **centrifugal force**:  
+> $$\frac{1}{4\pi\epsilon_{0}}\frac{Ze_{0}^{2}}{r^{2}}=\frac{mv^{2}}{r}$$  
+> From the angular momentum relation, we know that:  
+> $$v=\frac{nh}{2\pi mr}$$  
+> Substituting this in and solving for $r$ gives:  
+> $$r=\frac{n^{2}h^{2}\epsilon_{0}}{\pi Ze_{0}^{2}m}$$  
+Now, for the electron’s **total energy**:  
+> The kinetic energy is $E_{k} = \frac{1}{2}mv^{2}$,  
+> and the potential energy is $U = -\frac{1}{4\pi\epsilon_{0}}\frac{Ze_{0}^{2}}{r}$.  
+> Combining them gives:  
+> $$E=T+V=\frac{1}{2}mv^{2}-\frac{1}{4\pi\epsilon_{0}}\frac{Ze_{0}^{2}}{r}$$  
+> Substituting our expressions for $r$ and $v$, we find:  
+> $$E=-\frac{mZ^{2}e_{0}^{4}}{8\epsilon_{0}^{2}n^{2}h^{2}}$$  
 
 ## De Broglie's matter wave derivation
 
@@ -649,6 +652,10 @@ Bohr, N. (1913) I. On the constitution of atoms and molecules, The London, Edinb
 <https://doi.org/10.1080/14786441308634955>  
 Eckert, M. How Sommerfeld extended Bohr’s model of the atom (1913–1916). EPJ H 39, 141–156 (2014).  
 <https://doi.org/10.1140/epjh/e2013-40052-4>  
+Sommerfeld, A. (1915). Zur Theorie der Balmerschen Serie. Sitzungsberichte der Bayerischen Akademie der Wissenschaften, Mathematisch-Physikalische Klasse, 425-458.  
+<https://d-nb.info/1345425740/34>
+Sommerfeld, A. (1916). Zur Quantentheorie der Spektrallinien. Annalen der Physik. 356, 1-94.  
+<https://doi.org/10.1002/andp.19163561702>
 de Broglie, L. (1924) XXXV. A tentative theory of light quanta, The London, Edinburgh, and Dublin Philosophical Magazine and Journal of Science, 47:278, 446-458.  
 <https://doi.org/10.1080/14786442408634378>  
 de Broglie, L. Recherches sur la théorie des Quanta. Physique. Migration - université en cours d'affectation, 1924. Français. ⟨NNT : ⟩. ⟨tel-00006807⟩  

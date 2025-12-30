@@ -2,7 +2,7 @@
 title: "Quantum Chemistry: 2.1. Heisenberg's quantum mechanics"
 published: 2025-12-11
 description: "How Heisenberg explained the quantum world?"
-image: "heisenberg.jpg"
+image: "https://gcore.jsdelivr.net/gh/chemmasterynahida/assets/common/heisenberg/heisenberg.jpg"
 tags: ["Quantum Chemistry"]
 category: Quantum Chemistry
 lang: en
@@ -25,7 +25,7 @@ Three brilliant minds — **Werner Heisenberg**, **Erwin Schrödinger**, and **P
 
 ## Heisenberg's insight
 
-Werner Heisenberg, still so young at the time (born in 1901), made a surprisingly bold suggestion:  
+In 1925, **Werner Heisenberg**, still so young at the time (born in 1901), made a surprisingly bold suggestion:  
 
 > *“What if there were no orbits to begin with?”*  
 
@@ -41,13 +41,12 @@ He used wonderfully clever mathematics, expressing physical quantities as **matr
 In his famous *Umdeutung* (*reinterpretation*) paper, he wrote things like:  
 $$p=\{p_{nm}\},\quad x=\{x_{nm}\}$$  
 
-He connected observable transitions between quantum numbers \(n\) and \(m\).  
-Time dependence enters through a **discrete Fourier expansion**:
-$$A=\sum_{n,m} A_{nm} e^{2\pi i\nu_{nm} t}$$
+He connected observable transitions between quantum numbers $n$ and $m$.  
+Time dependence enters through a **discrete Fourier expansion**:  
+$$A=\sum_{n,m} A_{nm} e^{2\pi i\nu_{nm} t}$$  
 
-(Yes—Fourier transforms appear everywhere in physics. They let us rewrite time-behavior as a “song” of frequencies~)  
-![Fourier transformation](fourier-transform.png "Fourier transformation")  
-Fourier transformation  
+(Yes—Fourier transforms appear everywhere in physics. They let us rewrite time-behaviour as a “song” of frequencies~)  
+![Fourier transformation](https://gcore.jsdelivr.net/gh/chemmasterynahida/assets/common/heisenberg/fourier-transform.png "Fourier transformation")  
 
 Position is written as:  
 $$x(t)=\sum_{n,m} x_{nm} e^{2\pi i\nu_{nm} t}$$  
@@ -59,7 +58,8 @@ Well… it’s simply:
 $$(X(t))^{2}=X(t)X(t)=(\sum_{k}x_{mk}x_{kn}e^{2\pi i(\nu_{nk}+\nu_{kn})t})$$  
 
 And for products:  
-$$(xy)_{nm}=\sum_k x_{nk}y_{km}e^{2\pi i(\nu_{nk}+\nu_{km})t},\qquad (yx)_{nm}=\sum_k y_{nk}x_{km}e^{2\pi i(\nu_{nk}+\nu_{km})t}$$  
+$$(xy)_{nm}=\sum_k x_{nk}y_{km}e^{2\pi i(\nu_{nk}+\nu_{km})t}$$  
+$$(yx)_{nm}=\sum_k y_{nk}x_{km}e^{2\pi i(\nu_{nk}+\nu_{km})t}$$  
 
 Just like ordinary matrices, $xy\neq yx$.  
 This non-commutativity whispers the quantum nature hidden inside.  
@@ -80,11 +80,11 @@ Let me gently remind you:
 Heisenberg wrote transition frequencies as:  
 $$\nu(n,m)=\frac{E_n - E_m}{h}$$  
 
-And he found a beautiful composition rule:  
+And he considered a beautiful composition rule:  
 $$\nu(n,m)=\nu(n,k)+\nu(k,m)$$  
 
 Just as energy differences, frequencies can be added too~  
-![Energy diagram](excitation.png "Energy diagram")  
+![Energy diagram](https://gcore.jsdelivr.net/gh/chemmasterynahida/assets/common/heisenberg/excitation.png "Energy diagram")  
 
 Classically, frequency satisfies:  
 $$2\pi\nu(n,n-1)=\frac{dE}{dJ}$$  
@@ -116,7 +116,7 @@ That means:
 * Energy is **quantised** in equal intervals $\hbar \omega_0$.  
 * Even at the lowest state, the oscillator has **non-zero energy** — the **zero-point energy (ZPE)**.  
 
-![harmonic oscillator](zpe.png "Quantum harmonic oscillator has nonzero zero-point energy")  
+![harmonic oscillator](https://gcore.jsdelivr.net/gh/chemmasterynahida/assets/common/heisenberg/zpe.png "Quantum harmonic oscillator has nonzero zero-point energy")  
 
 The quantum world never sits completely still…  
 It always trembles with tiny fluctuations.  
@@ -162,7 +162,7 @@ $$\Delta x\,\Delta p \ge \frac{\hbar}{2}$$
 In quantum mechanics, some pairs of quantities simply refuse to be known perfectly at the same moment.  
 It’s not a failure of our tools…  
 It’s part of nature’s own poetry.  
-![uncertainty principle](uncertainty-principle.png "It is impossible to measure position and momentum accurately at the same time.")  
+![uncertainty principle](https://gcore.jsdelivr.net/gh/chemmasterynahida/assets/common/heisenberg/uncertainty-principle.png "It is impossible to measure position and momentum accurately at the same time.")  
 
 ---
 
@@ -203,7 +203,7 @@ Position becomes:
 $$x=\frac{a(n,n-1)}{2}e^{i\omega(n,n-1)t}+\frac{a(n-1,n)}{2}e^{i\omega(n-1,n)t}$$  
 
 The amplitude satisfies:  
-$$(a(n,n+1))^2-(a(n,n-1))^2=\frac{h}{\pi m\omega_0}=k$$  
+$$(a(n,n+1))^2-(a(n,n-1))^2=\frac{h}{\pi m\omega_0}$$  
 
 With the boundary condition $a(0,-1)=0$:  
 $$a(n,n-1)=\sqrt{\frac{nh}{\pi m\omega_0}}$$  

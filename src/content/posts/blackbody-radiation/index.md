@@ -2,7 +2,7 @@
 title: "Quantum Chemistry: 1.1. Blackbody Radiation"
 published: 2025-10-05
 description: "What problem did blackbody radiation theory have, and how can it be solved?"
-image: "planck.png"
+image: "https://gcore.jsdelivr.net/gh/chemmasterynahida/assets/common/blackbody-radiation/planck.png"
 tags: ["Quantum Chemistry"]
 category: Quantum Chemistry
 lang: en
@@ -13,11 +13,11 @@ draft: false
 
 ## Quantum Chemistry: Intro
 
-Hello! This is Chemistry Mastery Nahida.  
+Hello~ This is Chemistry Mastery Nahida.  
 Today, we begin our very first lecture in *Quantum Chemistry* — a journey into the world where even light and energy follow mysterious, tiny rules.  
 
 To begin, we must understand what *Quantum* means. You’ve probably heard this word before, right? It sounds a bit futuristic — like something from a high-tech laboratory. Quantum computers, for example, are quite famous today!  
-![quantum computer](qc.jpg "Quantum Computer by Google")
+![quantum computer](https://gcore.jsdelivr.net/gh/chemmasterynahida/assets/common/blackbody-radiation/qc.jpg "Quantum Computer by Google")
 
 But what *is* a quantum, truly?  
 If you think of the word *quantity*, you’re already close! The term *quantum* comes from it, meaning a small *amount* of something. Once we see how quantum mechanics was born, this meaning will make perfect sense.  
@@ -50,7 +50,7 @@ $k$: Boltzmann constant ($k=1.380649×10^{−23}~J/K$)
 But something went terribly wrong.  
 At high frequencies, this equation predicted infinite energy!  
 Physicists called it the **“Ultraviolet Catastrophe.”**  
-![ultraviolet catastrophe](planck.png "\"Ultraviolet catastrophe\"")  
+![ultraviolet catastrophe](https://gcore.jsdelivr.net/gh/chemmasterynahida/assets/common/blackbody-radiation/planck.png "\"Ultraviolet catastrophe\"")  
 Rayleigh–Jeans law matched experiments at low frequencies, while Wien’s worked at high ones — yet neither told the full story.  
 
 ---
@@ -107,7 +107,44 @@ Let’s see how Planck’s equation connects to both.
 
 ### Stefan-Boltzmann law
 
-Integrating Planck’s law over all frequencies gives total emitted energy:  
+The area under Planck’s law over all frequencies gives total emitted energy:  
+We can also get surface radiation from it.  
+
+**Stefan-Boltzmann law**  
+$$M=\sigma T^{4}=\frac{2\pi^{5}k^{4}}{15h^{3}c^{2}}T^{4}$$  
+$$\sigma=\frac{2\pi^{5}k^{4}}{15h^{3}c^{2}}=5.67\times10^{-8}W/m^{2}\cdot K^{4}$$  
+and indeed, the constant $\sigma$ matches experiments beautifully!  
+
+### Wien's displacement law
+
+Wien's displacement law is about which wavelength (or frequency) have a maximum radiation.  
+
+By finding where radiation peak is, we obtain:  
+**Wien's displacement law**  
+$$\lambda_{peak}=\frac{b}{T}\approx\frac{hc}{4.9651kT}=\frac{2.90mm/K}{T}$$  
+So hotter objects glow with shorter wavelengths — from red, to yellow, to white-blue.  
+
+### $\nu\rightarrow0$
+
+Rayleigh-Jeans law can explain the experimental result for low frequency. For small $\nu$, Planck's law should be converged into Rayleigh-Jeans law.  
+
+$$\lim_{\nu\rightarrow0}\frac{8\pi h\nu^{3}}{c^{3}}\cdot\frac{1}{e^{h\nu/kT}-1}d\nu=\frac{8\pi kT\nu^{2}}{c^{3}}d\nu$$  
+For small frequency, the law converges into Rayleigh-Jeans law.  
+
+### $\nu\rightarrow\infty$
+
+Wien's law can explain the experimental result for high frequency. For large $\nu$, Planck's law should be converged into Wien's law.  
+
+$$\lim_{\nu\rightarrow\infty}\frac{8\pi h\nu^{3}}{c^{3}}\cdot\frac{1}{e^{h\nu/kT}-1}d\nu=\frac{8\pi h\nu^{3}}{c^{3}}\cdot e^{-h\nu/kT}d\nu=a\nu^{3}e^{-b\nu/T}$$  
+For large frequency, the law is similar to Wien's law.  
+
+---
+---
+
+## Derivations
+
+### Stefan-Boltzmann law: derivation
+
 > $$\int du=\int_{0}^{\infty}\frac{8\pi h\nu^{3}}{c^{3}}\cdot\frac{1}{e^{h\nu/kT}-1}d\nu$$  
 > Let $x=h\nu/kT$ and $dx=hd\nu/kT$for the calculation.  
 > $$\int_{0}^{\infty}\frac{8\pi k^{3}T^{3}}{h^{2}c^{3}}\cdot\frac{x^{3}}{e^{x}-1}\cdot\frac{kT}{h}dx$$  
@@ -120,14 +157,8 @@ Integrating Planck’s law over all frequencies gives total emitted energy:
 > We can convert from total energy to surface radiation by multiplying $c/4$.  
 > $$M=E\cdot\frac{c}{4}=\frac{8\pi^{5}k^{4}T^{4}}{15h^{3}c^{3}}\cdot\frac{c}{4}=\frac{2\pi^{5}k^{4}T^{4}}{15h^{3}c^{2}}=\sigma T^{4}$$  
 
-**Stefan-Boltzmann law**  
-$$M=\sigma T^{4}=\frac{2\pi^{5}k^{4}}{15h^{3}c^{2}}T^{4}$$  
-$$\sigma=\frac{2\pi^{5}k^{4}}{15h^{3}c^{2}}=5.67\times10^{-8}W/m^{2}\cdot K^{4}$$  
-and indeed, the constant $\sigma$ matches experiments beautifully!  
+### Wien's displacement law: derivataion
 
-### Wien's displacement law
-
-> Wien's displacement law is about which wavelength (or frequency) have a maximum radiation.  
 > $$\frac{d(du/d\lambda)}{d\lambda}=0$$  
 > Planck's law can be described by wavelength as:  
 > $$\frac{du(\lambda,T)}{d\lambda}=\frac{8\pi hc}{\lambda^{5}}\cdot\frac{1}{e^{hc/\lambda kT}-1}$$  
@@ -138,31 +169,19 @@ and indeed, the constant $\sigma$ matches experiments beautifully!
 > $x=\frac{hc}{\lambda kT}\approx4.9651$(We can get numerical value only), so this relationship can be written as:  
 > $$\lambda_{peak}=\frac{b}{T}\approx\frac{hc}{4.9651kT}=\frac{2.90mm/K}{T}$$  
 
-By finding where radiation peaks, we obtain:  
-**Wien's displacement law**  
-$$\lambda_{peak}=\frac{b}{T}\approx\frac{hc}{4.9651kT}=\frac{2.90mm/K}{T}$$  
-So hotter objects glow with shorter wavelengths — from red, to yellow, to white-blue.  
+### $\nu\rightarrow0$: derivation
 
-### $\nu\rightarrow0$
-
-Rayleigh-Jeans law can explain the experimental result for low frequency. For small $\nu$, Planck's law should be converged into Rayleigh-Jeans law.  
 > $$\lim_{\nu\rightarrow0}du(\nu,T)=\lim_{\nu\rightarrow0}\frac{8\pi h\nu^{3}}{c^{3}}\cdot\frac{1}{e^{h\nu/kT}-1}d\nu$$  
 > It is known that the limit converges:  
 > $$\lim_{x\rightarrow0}\frac{e^{x}-1}{x}=1$$  
 > Therefore, the limit of equation becomes:  
 > $$\lim_{\nu\rightarrow0}\frac{8\pi h\nu^{3}}{c^{3}}\cdot\frac{1}{e^{h\nu/kT}-1}d\nu=\frac{8\pi kT\nu^{2}}{c^{3}}d\nu$$  
-For small frequency, the law converges into Rayleigh-Jeans law.  
 
-### $\nu\rightarrow\infty$
+### $\nu\rightarrow\infty$: derivation
 
-Wien's law can explain the experimental result for high frequency. For large $\nu$, Planck's law should be converged into Wien's law.  
 > $$\lim_{\nu\rightarrow\infty}du(\nu,T)=\lim_{\nu\rightarrow\infty}\frac{8\pi h\nu^{3}}{c^{3}}\cdot\frac{1}{e^{h\nu/kT}-1}d\nu$$  
 > Since exponential function grows fast, so we can consider $e^{h\nu/kT}-1$ as $e^{h\nu/kT}$.  
 > $$\lim_{\nu\rightarrow\infty}\frac{8\pi h\nu^{3}}{c^{3}}\cdot\frac{1}{e^{h\nu/kT}-1}d\nu=\frac{8\pi h\nu^{3}}{c^{3}}\cdot e^{-h\nu/kT}d\nu=a\nu^{3}e^{-b\nu/T}$$  
-For large frequency, the law is similar to Wien's law.  
-
----
----
 
 ## Planck's Ideas and Insights
 
@@ -179,7 +198,7 @@ He studied entropy and thermodynamics, and through elegant reasoning, found a ne
 > He first applied thermodynamics for this work. It can be expressed as:  
 > $$dU=TdS-PdV$$  
 > The experiment was held in a box with tiny pinhole, so the volume of system is not changed.  
-> ![experiment](experiment.jpg "Blackbody Radiation Experiment")  
+> ![experiment](https://gcore.jsdelivr.net/gh/chemmasterynahida/assets/common/blackbody-radiation/experiment.jpg "Blackbody Radiation Experiment")  
 > So the thermodynamics can be written as:  
 > $$dU=TdS,~\frac{\partial S}{\partial U}=\frac{1}{T}$$  
 > Planck considered ${\partial S}/{\partial U}$ for the two laws:  
