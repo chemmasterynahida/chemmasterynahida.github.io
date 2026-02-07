@@ -107,7 +107,7 @@ Let’s see how Planck’s equation connects to both.
 
 ### Stefan-Boltzmann law
 
-The area under Planck’s law over all frequencies gives total emitted energy:  
+The area under Planck’s law over all frequencies gives total emitted energy.  
 We can also get surface radiation from it.  
 
 **Stefan-Boltzmann law**  

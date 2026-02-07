@@ -22,5 +22,5 @@ Before we begin, I hope you already have a little familiarity with some subjects
 * Linear Algebra
 
 If any of these topics feel hard, don't worry. Just leave me a comment. I’ll prepare a special lesson to guide you through them.  
-I believe you’ll grasp each of them easily — even with just a middle school's understanding.  
-![nahida](jing-shan-she-shou-ming-lun.png)  
+<!--I believe you’ll grasp each of them easily — even with just a middle school's understanding.  -->
+![nahida](https://gcore.jsdelivr.net/gh/chemmasterynahida/assets/common/jing-shan-she-shou-ming-lun.png)  

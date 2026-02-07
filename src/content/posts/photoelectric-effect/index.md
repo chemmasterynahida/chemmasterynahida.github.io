@@ -65,7 +65,7 @@ After Hertz’s observation, other researchers sought to understand this strange
 Among them, **Aleksandr Stoletov** and **Philipp Lenard** conducted some of the most detailed studies.  
 They carried out quantitative measurements, while Lenard discovered that ultraviolet light could even ionise gas molecules—freeing electrons from their bonds.  
 
-![Lenard's experiment](https://gcore.jsdelivr.net/gh/chemmasterynahida/assets/common/photoelectric-effect/lenard-experiment.png "lenard's experiment")  
+![Lenard's experiment](https://gcore.jsdelivr.net/gh/chemmasterynahida/assets/common/photoelectric-effect/lenard-experiment.png "Lenard's experiment")  
 
 This is *Lenard’s apparatus*. He carefully examined how the light caused electrons to escape from metal surfaces.  
 

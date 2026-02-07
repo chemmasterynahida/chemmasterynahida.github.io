@@ -622,7 +622,7 @@ $$\lambda=\frac{h}{p}$$
 > $$dk=\frac{2\pi mc}{h(1-\beta^{2})^{3/2}}d\beta$$  
 > So the group velocity is simply:  
 > $$v_{g}=\frac{d\omega}{dk}=\beta c=v$$  
-> This is exactly the **velocity of the particle itself**, reminding us that **mass is energy** ($E = mc^{2}$).  
+> This is exactly the **velocity of the particle itself**.  
 
 ## References
 
