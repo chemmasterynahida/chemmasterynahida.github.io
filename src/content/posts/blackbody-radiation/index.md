@@ -110,41 +110,6 @@ Let’s see how Planck’s equation connects to both.
 The area under Planck’s law over all frequencies gives total emitted energy.  
 We can also get surface radiation from it.  
 
-**Stefan-Boltzmann law**  
-$$M=\sigma T^{4}=\frac{2\pi^{5}k^{4}}{15h^{3}c^{2}}T^{4}$$  
-$$\sigma=\frac{2\pi^{5}k^{4}}{15h^{3}c^{2}}=5.67\times10^{-8}W/m^{2}\cdot K^{4}$$  
-and indeed, the constant $\sigma$ matches experiments beautifully!  
-
-### Wien's displacement law
-
-Wien's displacement law is about which wavelength (or frequency) have a maximum radiation.  
-
-By finding where radiation peak is, we obtain:  
-**Wien's displacement law**  
-$$\lambda_{peak}=\frac{b}{T}\approx\frac{hc}{4.9651kT}=\frac{2.90mm/K}{T}$$  
-So hotter objects glow with shorter wavelengths — from red, to yellow, to white-blue.  
-
-### $\nu\rightarrow0$
-
-Rayleigh-Jeans law can explain the experimental result for low frequency. For small $\nu$, Planck's law should be converged into Rayleigh-Jeans law.  
-
-$$\lim_{\nu\rightarrow0}\frac{8\pi h\nu^{3}}{c^{3}}\cdot\frac{1}{e^{h\nu/kT}-1}d\nu=\frac{8\pi kT\nu^{2}}{c^{3}}d\nu$$  
-For small frequency, the law converges into Rayleigh-Jeans law.  
-
-### $\nu\rightarrow\infty$
-
-Wien's law can explain the experimental result for high frequency. For large $\nu$, Planck's law should be converged into Wien's law.  
-
-$$\lim_{\nu\rightarrow\infty}\frac{8\pi h\nu^{3}}{c^{3}}\cdot\frac{1}{e^{h\nu/kT}-1}d\nu=\frac{8\pi h\nu^{3}}{c^{3}}\cdot e^{-h\nu/kT}d\nu=a\nu^{3}e^{-b\nu/T}$$  
-For large frequency, the law is similar to Wien's law.  
-
----
----
-
-## Derivations
-
-### Stefan-Boltzmann law: derivation
-
 > $$\int du=\int_{0}^{\infty}\frac{8\pi h\nu^{3}}{c^{3}}\cdot\frac{1}{e^{h\nu/kT}-1}d\nu$$  
 > Let $x=h\nu/kT$ and $dx=hd\nu/kT$for the calculation.  
 > $$\int_{0}^{\infty}\frac{8\pi k^{3}T^{3}}{h^{2}c^{3}}\cdot\frac{x^{3}}{e^{x}-1}\cdot\frac{kT}{h}dx$$  
@@ -157,7 +122,14 @@ For large frequency, the law is similar to Wien's law.
 > We can convert from total energy to surface radiation by multiplying $c/4$.  
 > $$M=E\cdot\frac{c}{4}=\frac{8\pi^{5}k^{4}T^{4}}{15h^{3}c^{3}}\cdot\frac{c}{4}=\frac{2\pi^{5}k^{4}T^{4}}{15h^{3}c^{2}}=\sigma T^{4}$$  
 
-### Wien's displacement law: derivataion
+**Stefan-Boltzmann law**  
+$$M=\sigma T^{4}=\frac{2\pi^{5}k^{4}}{15h^{3}c^{2}}T^{4}$$  
+$$\sigma=\frac{2\pi^{5}k^{4}}{15h^{3}c^{2}}=5.67\times10^{-8}W/m^{2}\cdot K^{4}$$  
+and indeed, the constant $\sigma$ matches experiments beautifully!  
+
+### Wien's displacement law
+
+Wien's displacement law is about which wavelength (or frequency) have a maximum radiation.  
 
 > $$\frac{d(du/d\lambda)}{d\lambda}=0$$  
 > Planck's law can be described by wavelength as:  
@@ -168,8 +140,15 @@ For large frequency, the law is similar to Wien's law.
 > $$\frac{d}{dx}(\frac{x^{5}}{e^{x}-1})=\frac{5x^{4}(e^{x}-1)-x^{5}(e^{x})}{(e^{x}-1)^{2}}=0$$  
 > $x=\frac{hc}{\lambda kT}\approx4.9651$(We can get numerical value only), so this relationship can be written as:  
 > $$\lambda_{peak}=\frac{b}{T}\approx\frac{hc}{4.9651kT}=\frac{2.90mm/K}{T}$$  
+By finding where radiation peak is, we obtain:  
 
-### $\nu\rightarrow0$: derivation
+**Wien's displacement law**  
+$$\lambda_{peak}=\frac{b}{T}\approx\frac{hc}{4.9651kT}=\frac{2.90mm/K}{T}$$  
+So hotter objects glow with shorter wavelengths — from red, to yellow, to white-blue.  
+
+### $\nu\rightarrow0$
+
+Rayleigh-Jeans law can explain the experimental result for low frequency. For small $\nu$, Planck's law should be converged into Rayleigh-Jeans law.  
 
 > $$\lim_{\nu\rightarrow0}du(\nu,T)=\lim_{\nu\rightarrow0}\frac{8\pi h\nu^{3}}{c^{3}}\cdot\frac{1}{e^{h\nu/kT}-1}d\nu$$  
 > It is known that the limit converges:  
@@ -177,11 +156,20 @@ For large frequency, the law is similar to Wien's law.
 > Therefore, the limit of equation becomes:  
 > $$\lim_{\nu\rightarrow0}\frac{8\pi h\nu^{3}}{c^{3}}\cdot\frac{1}{e^{h\nu/kT}-1}d\nu=\frac{8\pi kT\nu^{2}}{c^{3}}d\nu$$  
 
-### $\nu\rightarrow\infty$: derivation
+For small frequency, the law converges into Rayleigh-Jeans law.  
+
+### $\nu\rightarrow\infty$
+
+Wien's law can explain the experimental result for high frequency. For large $\nu$, Planck's law should be converged into Wien's law.  
 
 > $$\lim_{\nu\rightarrow\infty}du(\nu,T)=\lim_{\nu\rightarrow\infty}\frac{8\pi h\nu^{3}}{c^{3}}\cdot\frac{1}{e^{h\nu/kT}-1}d\nu$$  
 > Since exponential function grows fast, so we can consider $e^{h\nu/kT}-1$ as $e^{h\nu/kT}$.  
 > $$\lim_{\nu\rightarrow\infty}\frac{8\pi h\nu^{3}}{c^{3}}\cdot\frac{1}{e^{h\nu/kT}-1}d\nu=\frac{8\pi h\nu^{3}}{c^{3}}\cdot e^{-h\nu/kT}d\nu=a\nu^{3}e^{-b\nu/T}$$  
+> 
+For large frequency, the law is similar to Wien's law.  
+
+---
+---
 
 ## Planck's Ideas and Insights
 
