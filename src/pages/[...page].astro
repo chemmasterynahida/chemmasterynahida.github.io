@@ -1,23 +1,50 @@
 ---
-import type { GetStaticPaths } from "astro";
-import Pagination from "../components/control/Pagination.astro";
-import PostPage from "../components/PostPage.astro";
-import { PAGE_SIZE } from "../constants/constants";
+// import type { GetStaticPaths } from "astro";
+// import Pagination from "../components/control/Pagination.astro";
+import CategoryPage from "../components/CategoryPage.astro";
+// import { PAGE_SIZE } from "../constants/constants";
 import MainGridLayout from "../layouts/MainGridLayout.astro";
-import { getSortedPosts } from "../utils/content-utils";
+// import { getSortedPosts } from "../utils/content-utils";
+import { getCollection } from "astro:content";
+import { CATEGORY_IMAGE_MAP, DEFAULT_CATEGORY_IMAGE } from "../config/category";
 
-export const getStaticPaths = (async ({ paginate }) => {
+/*export const getStaticPaths = (async ({ paginate }) => {
 	const allBlogPosts = await getSortedPosts();
 	return paginate(allBlogPosts, { pageSize: PAGE_SIZE });
-}) satisfies GetStaticPaths;
+}) satisfies GetStaticPaths;*/
 // https://github.com/withastro/astro/issues/6507#issuecomment-1489916992
+export async function getStaticPaths() {
+  const posts = await getCollection("posts");
 
-const { page } = Astro.props;
+  const published = posts
+  .filter(post => !post.data.draft);
 
-const len = page.data.length;
+  const categoryMap = new Map<string, number>();
+
+  for (const post of published) {
+    const category = post.data.category;
+    if (!category) continue;
+
+    categoryMap.set(category, (categoryMap.get(category) || 0) + 1);
+  }
+
+  const categories = Array.from(categoryMap.entries()).map(
+    ([name, count]) => ({ name, count, image: CATEGORY_IMAGE_MAP[name] ?? DEFAULT_CATEGORY_IMAGE })
+  );
+
+  return [{
+    params: { page: undefined },
+    props: { categories }
+  }];
+}
+
+/*const { page } = Astro.props;
+
+const len = page.data.length;*/
+
+const { categories } = Astro.props;
 ---
 
 <MainGridLayout>
-    <PostPage page={page}></PostPage>
-    <Pagination class="mx-auto onload-animation" page={page} style={`animation-delay: calc(var(--content-delay) + ${(len)*50}ms)`}></Pagination>
+    <CategoryPage categories={categories}></CategoryPage>
 </MainGridLayout>

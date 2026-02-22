@@ -1,0 +1,42 @@
+---
+interface Props {
+  categories: {
+    name: string;
+    count: number;
+    image: string;
+  }[];
+}
+
+const { categories } = Astro.props;
+---
+
+<div class="transition flex flex-col rounded-[var(--radius-large)] bg-[var(--card-bg)] py-1 md:py-0 md:bg-transparent md:gap-4 mb-4">
+    {categories.map((cat, index) => (
+      <a href={`/${cat.name}/`}
+        class="card-base flex flex-col w-full rounded-[var(--radius-large)] overflow-hidden relative pl-6 pr-6 pt-6 pb-6 onload-animation"
+       style={`animation-delay: calc(var(--content-delay) + ${index * 50}ms)`}
+      >
+        {/* Image */}
+      <img
+        src={cat.image}
+        alt={cat.name}
+        class="w-full h-56 object-cover transition duration-500 group-hover:scale-105"
+      />
+
+      {/* Dark overlay */}
+      <div class="absolute inset-0 bg-black/40"></div>
+
+        {/* Content */}
+      <div class="absolute bottom-0 left-0 p-6 text-white">
+        <h2 class="font-bold text-3xl mb-2">
+          {cat.name}
+        </h2>
+
+        <div class:list={["transition text-75 mb-3.5 pr-4", {"line-clamp-2 md:line-clamp-1": !cat.count}]}>
+          {cat.count} posts
+        </div>
+      </div>
+
+      </a>
+    ))}
+</div>
