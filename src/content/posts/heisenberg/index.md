@@ -144,19 +144,33 @@ Heisenberg then asked a subtle question:
 
 > *If we measure something with limited accuracy, how does nature respond?*  
 
-He studied probability amplitudes like $S(\eta,x)$, which behave as Gaussians:  
-$$S(\eta,x)\propto\exp\!\left(-\frac{(x-x')^2}{2x_1^2}-\frac{2\pi i}{h}p'(x-x')\right)$$  
+He once imagined a very clever experiment: a gamma-ray microscope.  
+Gamma rays are a kind of electromagnetic wave with wavelengths far shorter than visible light.  
+And when something has a shorter wavelength… it can “see” much smaller things—far beyond the scale of atoms.  
 
-Switching to momentum using:  
-$$S(x,p)=\langle x|p\rangle\propto e^{2\pi i px/h}$$  
+Now, suppose we wish to observe an electron, and we want to know its position within an uncertainty of $\Delta x$.  
+Then naturally, the light we use must be precise enough to match that scale:  
+$$\lambda \leq \Delta x$$  
+According to Einstein's idea, light also carries momentum.  
+A photon with wavelength $\lambda$ has momentum:  
+$$p=\frac{h}{\lambda}$$  
 
-he obtained the momentum distribution:  
-$$S(\eta,p)=\int S(\eta,x)S(x,p)dx\propto\exp\!\left(-\frac{(p-p')^2}{2p_1^2}+\frac{2\pi i}{h}x'(p-p')\right)$$  
+But… here is where things become a little troublesome.  
 
-From here blooms the famous **uncertainty principle**:  
-$$p_1 x_1 = \frac{h}{2\pi}$$  
+Light is not just a passive observer—it behaves like a particle too.  
+So when we use it to “look” at the electron, it gently nudges the electron… changing its motion.  
 
-Later refined into the standard form:  
+If we try to avoid disturbing the electron, we might choose light with a longer wavelength.  
+But then… such light cannot resolve the electron’s position very precisely.  
+It’s almost as if nature is whispering to us: “You may choose what to know clearly—but not everything at once.”  
+
+Following this line of thought, he discovered a beautiful and profound relationship between position and momentum:  
+$$\sigma_{p}\sigma_{x} = \frac{h}{2\pi}$$  
+This is the Heisenberg's famous **uncertainty principle**.  
+
+A quiet reminder… that at the smallest scales of our world, certainty itself becomes something we must treat with care.  
+
+Later it is refined into the standard form:  
 $$\Delta x\,\Delta p \ge \frac{\hbar}{2}$$  
 
 In quantum mechanics, some pairs of quantities simply refuse to be known perfectly at the same moment.  
@@ -193,7 +207,7 @@ $$2\pi dJ = h dn$$
 And by Kramers’ quantisation rule:  
 $$\alpha\frac{dA(n,\alpha)}{dn}=A(n+\alpha,n)-A(n,n-\alpha)$$  
 
-The quantum Planck constant becomes:  
+The **quantum** Planck constant becomes:  
 $$h_{quantum}=4\pi m\sum_{\alpha}\Big(|x(n,n+\alpha)|^{2}\omega(n,n+\alpha)-|x(n,n-\alpha)|^{2}\omega(n,n-\alpha)\Big)$$  
 
 Next, assume:  
@@ -223,7 +237,7 @@ Heisenberg expanded $p$ and $x$ in Fourier form:
 $$p=\sum_\tau p_\tau e^{2\pi i\nu\tau t},\quad x=\sum_\tau x_\tau e^{2\pi i\nu\tau t}$$  
 
 Classical action:  
-$$2\pi J=\int_{0}^{1/\nu}p\dot q dt$$  
+$$2\pi J=\int_{0}^{1/\nu}p\dot x dt$$  
 
 From this,  
 $$1=i\sum_{\tau}\tau\frac{\partial}{\partial J}(x_\tau p_{-\tau})$$  
