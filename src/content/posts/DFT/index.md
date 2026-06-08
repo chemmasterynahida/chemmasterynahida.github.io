@@ -1,7 +1,7 @@
 ---
 title: "Computational Chemistry: DFT basics"
 published: 2026-05-10
-description: "What is DFT, and how it is useful in chemistry"
+description: "What is DFT, and how it is useful in chemistry?"
 image: ""
 tags: ["Computational Chemistry"]
 category: Computational Chemistry
