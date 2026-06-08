@@ -154,7 +154,7 @@ However, it needs to calculate **Hessian**, which means a set of second derivate
 
 Fourth method is **quasi-Newton** method.  
 
-Quasi-Newton is similar to Newton-raphson method, but it avoids calculating expensive Hessian.  
+Quasi-Newton is similar to Newton-Raphson method, but it avoids calculating expensive Hessian.  
 It estimates the Hessian by:  
 $$\bold{B}_{n+1}=\frac{\nabla f(\bold{x}_{n+1})-\nabla f(\bold{x}_{n})}{\bold{x}_{n+1}-\bold{x}_{n}}$$  
 

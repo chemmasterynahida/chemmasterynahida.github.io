@@ -168,8 +168,6 @@ Following this line of thought, he discovered a beautiful and profound relations
 $$\sigma_{p}\sigma_{x} = \frac{h}{2\pi}$$  
 This is the Heisenberg's famous **uncertainty principle**.  
 
-A quiet reminder… that at the smallest scales of our world, certainty itself becomes something we must treat with care.  
-
 Later it is refined into the standard form:  
 $$\Delta x\,\Delta p \ge \frac{\hbar}{2}$$  
 
