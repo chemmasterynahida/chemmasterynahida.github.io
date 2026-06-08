@@ -1,6 +1,6 @@
 export const CATEGORY_IMAGE_MAP: Record<string, string> = {
-  "Quantum Chemistry": "https://gcore.jsdelivr.net/gh/chemmasterynahida/assets/images/nahida_wp_66_1.png"
-  "Physical Chemistry": "https://gcore.jsdelivr.net/gh/chemmasterynahida/assets/images/nahida_wp_66_2.png"
+  "Quantum Chemistry": "https://gcore.jsdelivr.net/gh/chemmasterynahida/assets/images/nahida-wp-66_1.jpg"
+  "Physical Chemistry": "https://gcore.jsdelivr.net/gh/chemmasterynahida/assets/images/nahida-wp-66_2.jpg"
   "Computational Chemistry": "https://gcore.jsdelivr.net/gh/chemmasterynahida/assets/images/nahida-wp.png"
 };
 
