@@ -44,20 +44,22 @@ $$E_{total}=E_{stretch}+E_{bend}+E_{torsion}+E_{coulomb}+E_{vdw}$$
 It is the basic form of the potential of the molecular system.  
 
 $E_{stretch}$ is the bond stretching potential, typically written as harmonic form:  
-$$E_{stretch}=\frac{1}{2}k_{r}(r-r_{0})^{2}$$  
+
+$E_{stretch}=\frac{1}{2}k_{r}(r-r_{0})^{2}$  
 
 $E_{bend}$ is the bending potential, decided by connection of three atoms, it is also typically written as harmonic form:  
-$$E_{bend}=\frac{1}{2}k_{\theta}(\theta-\theta_{0})^{2}$$  
+$E_{bend}=\frac{1}{2}k_{\theta}(\theta-\theta_{0})^{2}$  
 
 $E_{torsion}$ is about torsion, decided by four atoms, it means how much angle distributed between atom 1 and atom 4.  
-$$E_{torsion}=E_{0}\sum_{n} (1+\cos(n\phi-\delta))$$  
+$E_{torsion}=E_{0}\sum_{n} (1+\cos(n\phi-\delta))$  
+
 ![Torsion](https://gcore.jsdelivr.net/gh/chemmasterynahida/assets/common/optimisation/torsion.png "Torsion")  
 
 $E_{coulomb}$ is electrostatic potential between charged particles.  
-$$E_{coulomb}=\frac{1}{4\pi\epsilon_{0}}\frac{q_{1}q_{2}}{r}$$  
+$E_{coulomb}=\frac{1}{4\pi\epsilon_{0}}\frac{q_{1}q_{2}}{r}$  
 
 $E_{vdw}$ is potential from other nonbonding potential (van der Waals), typically uses Lennard-Jones form.  
-$$E_{vdw}=4\epsilon((\frac{\sigma}{r})^{12}-(\frac{\sigma}{r})^{6})$$  
+$E_{vdw}=4\epsilon((\frac{\sigma}{r})^{12}-(\frac{\sigma}{r})^{6})$  
 
 To decide the force field, we need to decide some parameters. They should fit to experiment and quantum computation result.  
 > $r_{0}$: The most stable bond lengths in single molecule  
@@ -75,31 +77,58 @@ To decide the force field, we need to decide some parameters. They should fit to
 ### Morse potential
 
 The harmonic stretching model is a rough approximation. We can derive the harmonic model from Taylor expression.  
-$$E=E_{0}+\frac{dE}{dr}(r-r_{0})+\frac{1}{2}\frac{d^{2}E}{dr^{2}}(r-r_{0})^{2}+\cdots$$
+$E=E_{0}+\frac{dE}{dr}(r-r_{0})+\frac{1}{2}\frac{d^{2}E}{dr^{2}}(r-r_{0})^{2}+\cdots$
+
 Since $E_{0}$ and $\frac{dE}{dr}$ become zero at the minimum potential, so we can write the stretching energy as:  
-$$E\approx\frac{1}{2}\frac{d^{2}E}{dr^{2}}(r-r_{0})^{2}$$  
+$E\approx\frac{1}{2}\frac{d^{2}E}{dr^{2}}(r-r_{0})^{2}$  
 The second derivative becomes the force constant of stretching.  
 
 To get accurate potential, Philip Morse suggested a new energy function.  
-$$E=D_{e}(1-e^{-a(r-r_{0})})^{2}$$  
+$E=D_{e}(1-e^{-a(r-r_{0})})^{2}$  
 where  
-$$\alpha=\sqrt{\frac{k_{r}}{2D}}$$  
+$\alpha=\sqrt{\frac{k_{r}}{2D}}$  
 ![Morse potential](https://gcore.jsdelivr.net/gh/chemmasterynahida/assets/common/optimisation/Morse-potential.svg.png "Morse potential")  
 It is called **Morse potential**.  
 Morse potential shows more accurate potential for long-range.  
 However, due to high sensitivity to initial state, and harmonic model fits well for short-range, still the harmonic model is widely used.  
 
-### Out-of-plane potential
+### Out-of-plane potential (improper potential)
+
+The out-of-plane potential is the harmonic potential around planar structure.  
+For sp2 structures of carbon--such as carbonyl group, benzene, or graphite--have planar structure in experiment.  
+The sp2 structures are important for many parts of chemistry. However, considering only bond length and angle can give a wrong answer.  
+When chemists construct the force field, they often include the harmonic term using distance from base plane.  
+$E=\frac{1}{2}k(d-d_{0})^{2}$  
+
+![cyclobutanone](https://gcore.jsdelivr.net/gh/chemmasterynahida/assets/common/optimisation/cyclobutanone.png "cyclobutanone")  
+(Cyclobutanone's oxygen atom should be located at the same plane with the 4 carbon atoms. However, without out-of-plane potential oxygen is located away from the plane. The out-of-plane potential can correct the position of the oxygen atom.)  
 
 ### exp-6 van der Waals potential
+
+It is known that attraction term of van der Waals interaction is proportional to $r^{-6}$.  
+However, the $r^{12}$ in repulsion term does not have any physical meaning.  
+It is for comfort of calculation to get $r^{12}$ from square of $r^6$ for low-performance computer at that time.  
+Therefore, other forms of van der Waals interactions are possible.  
+For example, exp-6 van der Waals (Buckingham) potential adopts exponential function as repulsion term.  
+We can write exp-6 van der Waals potential as:  
+$E_{vdW}=Ae^{-Br}-\frac{C}{r^6}$  
+
+In modern, Yang et al. (2020) calculated van der Waals interaction of two-molecule system using precise density functional theory (DFT) approach.  
+They propose using exp-PE potential for van der Waals interaction which has minimum error among their test cases.  
+
+$E_{exp-PE}(r)=\epsilon(\exp(\alpha(1-x))-(x^{4}-2x^{2}+3)\exp(\frac{\alpha}{2}(1-x)))$  
+where  
+- $\epsilon$=potential depth  
+- $x=r/r_{m}$    
+- $r_{m}$=radius with minimum potential (i.e. $E_{exp-PE}(r_m)=-\epsilon$)  
 
 ### Cross terms
 
 ## Optimisation method
 
 If we have a full potential map, we can find a minimum by finding the first derivative becomes zero.  
-The minimum point has the value that first derivative becomes zero, and second derivative in all direction become positive.  
-$$\frac{dE}{dr}=0,~\frac{d^{2}E}{dr^{2}}>0$$  
+The minimum point has the value that first derivative becomes zero, and second derivative in all direction must be positive.  
+$\frac{dE}{dr}=0,~\frac{d^{2}E}{dr^{2}}>0$  
 However, we do not know the potential map of the new system.  
 
 ### First derivative methods
@@ -108,7 +137,7 @@ First method is **steepest descent (SD)** method.
 It finds the maximum decreasing path in all directions, and then move along the path in certain step, and so on.  
 This method always lowers the energy, so that therefore eventually falls into the local minimum.  
 
-$$\bold{x}_{i+1}=\bold{x}_{i}-\gamma\nabla f(\bold{x}_{i})$$  
+$\bold{x}_{i+1}=\bold{x}_{i}-\gamma\nabla f(\bold{x}_{i})$  
 where  
 $\gamma$: step size  
 
@@ -118,7 +147,7 @@ Too large step can lead to overshot, too small step converges too slow.
 Moreover, near the local minimum, the energy converges slower due to small gradient, therefore it needs high number of steps.  
 
 To guarantee convergency, Barzilai-Borwein method suggests a seqence of step size.  
-$$\gamma_{n}=\frac{|(\bold{x}_{n}-\bold{x}_{n-1})^{T}(\nabla f(\bold{x}_{n})-\nabla f(\bold{x}_{n-1}))|}{||\nabla f(\bold{x}_{n})-\nabla f(\bold{x}_{n-1})||^{2}}$$  
+$\gamma_{n}=\frac{|(\bold{x}_{n}-\bold{x}_{n-1})^{T}(\nabla f(\bold{x}_{n})-\nabla f(\bold{x}_{n-1}))|}{||\nabla f(\bold{x}_{n})-\nabla f(\bold{x}_{n-1})||^{2}}$  
 This decreasing step size will eventually lead to the minimum within infinite steps.  
 
 ![Steepese descent](https://gcore.jsdelivr.net/gh/chemmasterynahida/assets/common/optimisation/Steepest_descent_convergence_path_for_A_=_2_2,_2_3.png "Steepest descent")  
@@ -128,9 +157,9 @@ People have suggested other methods to get minimum for resolving the problems of
 Second method is **conjugate gradient (CG)** method.  
 
 From the quadratic function:  
-$$f(x)=\frac{1}{2}x^{T}Ax-b^{T}x$$  
+$f(x)=\frac{1}{2}x^{T}Ax-b^{T}x$  
 It first decides two orthogonal directions $d_{i},d_{j}$ satisfying:  
-$$d_{i}^{T}Ad_{j}=0$$  
+$d_{i}^{T}Ad_{j}=0$  
 
 ![Conjugate gradient](https://gcore.jsdelivr.net/gh/chemmasterynahida/assets/common/optimisation/Conjugate_gradient_illustration.svg.png "Conjugate gradient")  
 
@@ -143,9 +172,9 @@ It can be also used for non-quadratic or nonlinear system because they can be ap
 Third method is **Newton-Raphson (NR)** method.  
 
 From Taylor expression of current point:  
-$$f(\bold{x})=f(\bold{x}_{0})+\nabla f(\bold{x}_{0})^{T}(\bold{x}-\bold{x}_{0})+\frac{1}{2}(\bold{x}-\bold{x}_{0})^{T}\bold{H}(\bold{x}-\bold{x}_{0})+\cdots$$  
+$f(\bold{x})=f(\bold{x}_{0})+\nabla f(\bold{x}_{0})^{T}(\bold{x}-\bold{x}_{0})+\frac{1}{2}(\bold{x}-\bold{x}_{0})^{T}\bold{H}(\bold{x}-\bold{x}_{0})+\cdots$  
 If the expression is quadratic, it will give the exact minimum value at once.  
-$$\bold{x}=\bold{x}_{0}-\bold{H}^{-1}\nabla f(\bold{x}_{0})$$  
+$\bold{x}=\bold{x}_{0}-\bold{H}^{-1}\nabla f(\bold{x}_{0})$  
 where  
 $\bold{H}=\nabla(\nabla f(\bold{x}_{0}))$: Hessian matrix (second derivates of all directions)  
 
@@ -156,10 +185,10 @@ Fourth method is **quasi-Newton** method.
 
 Quasi-Newton is similar to Newton-Raphson method, but it avoids calculating expensive Hessian.  
 It estimates the Hessian by:  
-$$\bold{B}_{n+1}=\frac{\nabla f(\bold{x}_{n+1})-\nabla f(\bold{x}_{n})}{\bold{x}_{n+1}-\bold{x}_{n}}$$  
+$\bold{B}_{n+1}=\frac{\nabla f(\bold{x}_{n+1})-\nabla f(\bold{x}_{n})}{\bold{x}_{n+1}-\bold{x}_{n}}$  
 
 Then use the same Newton method to approximate the minimum for each step.  
-$$\bold{x}_{n+1}=\bold{x}_{n}-\bold{B}_{n}^{-1}\nabla f(\bold{x}_{n})$$  
+$\bold{x}_{n+1}=\bold{x}_{n}-\bold{B}_{n}^{-1}\nabla f(\bold{x}_{n})$  
 
 No one can give the exact minimum value in general. They are giving a converging value of the process.  
 There are various methods for minimisation, each methods has its own pros and cons.  
@@ -179,10 +208,12 @@ The simulation programs suggest various methods for minimisation, but steepest d
 ## References
 
 Gradient descent - Wikipedia  
-<https://en.wikipedia.org/wiki/Gradient_descent>  
+(<https://en.wikipedia.org/wiki/Gradient_descent>）  
 Conjugate gradient method - Wikipedia  
-<https://en.wikipedia.org/wiki/Conjugate_gradient_method>  
+(<https://en.wikipedia.org/wiki/Conjugate_gradient_method>)  
 Quasi-Newton method - Wikipedia  
-<https://en.wikipedia.org/wiki/Quasi-Newton_method>  
+(<https://en.wikipedia.org/wiki/Quasi-Newton_method>)  
 Essentials of computational chemistry. Theories and Models, C. J. Cramer, (2nd Ed. Wiley, 2004)  
 Introduction to Computational Chemistry, F. Jensen (1999)  
+Li Yang, Lei Sun, Wei-Qiao Deng; van der Waals Function for Molecular Mechanics. J. Phys. Chem. A 12 March 2020; 124 (10): 2102–2107.  
+(<https://doi.org/10.1021/acs.jpca.9b11222>)  
